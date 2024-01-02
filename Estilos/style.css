@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ethnocentric";
+    src: url(../media/fonts/ethnocentric\ rg.otf);
+}
+
+body{
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 60px;
+}
+
+a,
+label,
+h3{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #7a6e6e75;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px 14px;
+    transform: scale(1.09);
+    transition: all ease .5s;
+}
+
+.aRight{
+    position: absolute;
+    right: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.estiloFooter{
+    background-color: #111;
+    display: grid;
+    width: 100vw;
+    height: 50px;
+}
+
+.listaFooter {
+    display: flex;
+    gap: 1rem;
+}
+
+.tituloG{
+    color: #bad9e4;
+    font-size: 15px;
+    text-shadow: rgb(255, 208, 0) 1px 0 5px;
+    font-family: "ethnocentric", sans-serif;
+}
+
+.carousel{
+    background-color: #2121219f;
+    height: 400px;
+}
+
+.pMarcas{
+    color: #ffffffaf;
+    background-color: #333;
+}
+
+.imgCarrusel{
+    width: 350px;
+}
+
+.top{
+    position: absolute;
+    right: 50px;
+}
+
+.top >a:hover {
+    text-decoration: underline;
+    background-color: #7a6e6e75;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 14px 4px 14px;
+    transform: scale(1.09);
+    transition: all ease .5s;
+}
+
+.cuerpo{
+    display: grid;
+    grid-area:  carrusel logo
+                form logo;
+}
+
+.carousel{
+    grid: carrusel;
+}
+
+.logo{
+    grid: logo;
+}
+
+form{
+    grid: form;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .aRight{
+        position: static;
+    }
+    a:hover {
+        margin-left: 15px;
+        padding: 7px 14px;
+    }
+    .estiloFooter{
+        height: 40px;
+    }
+}
