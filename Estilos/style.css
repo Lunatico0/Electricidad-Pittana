@@ -120,4 +120,12 @@ li {
     main{
         margin: 60px 0px;
     }
+    .facebook{
+        width: auto;
+    }
+
+    .top{
+        position: absolute;
+        right: 10px;
+    }
 }
