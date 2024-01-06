@@ -9,21 +9,26 @@
     src: url(../media/fonts/ethnocentric\ rg.otf);
 }
 
-body{
+body {
     background-color: #212121;
     height: 100vh;
     width: 100vw;
 }
 
-main{
+main {
     margin: 60px 0px 60px 0px;
     padding-bottom: 60px;
+}
+
+.mainEmpresa{
+    margin: -60px 0px -60px 0px;
+    padding-bottom: -60px;
 }
 
 a,
 label,
 h3,
-p{
+p {
     color: white;
     text-decoration: none;
 }
@@ -38,7 +43,7 @@ a:hover {
     transition: all ease .5s;
 }
 
-.aRight{
+.aRight {
     position: absolute;
     right: 5px;
 }
@@ -47,7 +52,7 @@ li {
     list-style: none;
 }
 
-.estiloFooter{
+.estiloFooter {
     background-color: #111;
     display: grid;
     width: 100vw;
@@ -59,33 +64,33 @@ li {
     gap: 1rem;
 }
 
-.tituloG{
+.tituloG {
     color: #bad9e4;
     font-size: 15px;
     text-shadow: rgb(255, 208, 0) 1px 0 5px;
     font-family: "ethnocentric", sans-serif;
 }
 
-.carousel{
+.carousel {
     background-color: #2121219f;
     height: 400px;
 }
 
-.pMarcas{
+.pMarcas {
     color: #ffffffaf;
     background-color: #333;
 }
 
-.imgCarrusel{
+.imgCarrusel {
     width: 350px;
 }
 
-.top{
+.top {
     position: absolute;
     right: 50px;
 }
 
-.top >a:hover {
+.top>a:hover {
     text-decoration: underline;
     background-color: #7a6e6e75;
     cursor: pointer;
@@ -95,37 +100,111 @@ li {
     transition: all ease .5s;
 }
 
-.carousel{
+.carousel {
     grid: carrusel;
 }
 
-.logo{
+.logo {
     grid: logo;
     margin: auto;
     padding: 20px 0px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    .aRight{
+.w-100-empresa {
+	height: 100vh;
+}
+
+.carousel-item-empresa {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption-empresa {
+    position: relative;
+    bottom: 500px;
+}
+
+.carousel-caption-empresa h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.carousel-caption-empresa p {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
+
+.carousel-caption-empresa a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #333;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #000;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .aRight {
         position: static;
     }
+
     a:hover {
         margin-left: 15px;
         padding: 7px 14px;
     }
-    .estiloFooter{
+
+    .estiloFooter {
         height: 40px;
     }
-    
-    main{
+
+    main {
         margin: 60px 0px;
     }
-    .facebook{
+
+    .facebook {
         width: auto;
     }
 
-    .top{
+    .top {
         position: absolute;
         right: 10px;
+    }
+
+    .tituloG:hover {
+        text-decoration: underline;
+        background-color: #7a6e6e75;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 2px;
+        margin-left: 2px;
+        transform: scale(1.08);
+        transition: all ease .5s;
+    }
+
+    .carousel-caption-empresa {
+        bottom: 565px;
+    }
+
+    .carousel-caption-empresa h2 {
+        font-size: 17px;
+        margin-top: 220px;
+    }
+
+    .carousel-caption-empresa a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .carousel-caption-empresa p {
+        font-size: 11px;
+        margin-right: 50px;
     }
 }
