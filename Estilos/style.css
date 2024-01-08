@@ -27,10 +27,10 @@ main {
 
 a,
 label,
-h3,
 p {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 a:hover {
@@ -38,9 +38,26 @@ a:hover {
     background-color: #7a6e6e75;
     cursor: pointer;
     border-radius: 5px;
-    padding: 7px 14px;
+    padding: 5px 13px 7px 13px;
     transform: scale(1.09);
     transition: all ease .5s;
+}
+
+h1{
+    color: #ffffffaf;
+    background-color: #333;
+    text-align: center;
+    font-size: 30px;
+}
+
+.historia h1{
+    color: #fff;
+    background-color: #3333335b;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .aRight {
@@ -76,9 +93,10 @@ li {
     height: 400px;
 }
 
-.pMarcas {
+.marcas {
     color: #ffffffaf;
     background-color: #333;
+    font-size: 20px;
 }
 
 .imgCarrusel {
@@ -95,17 +113,12 @@ li {
     background-color: #7a6e6e75;
     cursor: pointer;
     border-radius: 5px;
-    padding: 0px 14px 4px 14px;
+    padding: 0px 14px 5px 14px;
     transform: scale(1.09);
     transition: all ease .5s;
 }
 
-.carousel {
-    grid: carrusel;
-}
-
 .logo {
-    grid: logo;
     margin: auto;
     padding: 20px 0px;
 }
@@ -152,13 +165,22 @@ li {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    a,
+    label,
+    p {
+        font-size: 14px;
+    }
+
     .aRight {
         position: static;
     }
 
     a:hover {
-        margin-left: 15px;
-        padding: 7px 14px;
+        padding: 5px 9px;
+    }
+
+    .top>a:hover {
+        padding: 0px 9px 5px 9px;
     }
 
     .estiloFooter {
@@ -179,14 +201,9 @@ li {
     }
 
     .tituloG:hover {
-        text-decoration: underline;
-        background-color: #7a6e6e75;
-        cursor: pointer;
-        border-radius: 5px;
         padding: 2px;
         margin-left: 2px;
         transform: scale(1.08);
-        transition: all ease .5s;
     }
 
     .carousel-caption-empresa {
@@ -206,5 +223,14 @@ li {
     .carousel-caption-empresa p {
         font-size: 11px;
         margin-right: 50px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    .historia h1{
+        margin-left: 20px;
+        margin-right: 0px;
     }
 }
