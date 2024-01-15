@@ -63,6 +63,7 @@ h1{
 .aRight {
     position: absolute;
     right: 5px;
+    text-wrap: nowrap;
 }
 
 li {
@@ -260,5 +261,11 @@ li {
     .historia h1{
         margin-left: 20px;
         margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .historia h1{
+        margin-top: 40px;
     }
 }
