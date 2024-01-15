@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    margin: 60px 0px 60px 0px;
+    margin: 60px 0px 0px 0px;
     padding-bottom: 60px;
 }
 
@@ -123,6 +123,21 @@ li {
     padding: 20px 0px;
 }
 
+.infoImg{
+    width: 48vw;
+    max-width: 624px;
+    height: 416px;
+}
+
+.flexRow{
+    display: flex;
+}
+
+.flexReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .w-100-empresa {
 	height: 100vh;
 }
@@ -164,7 +179,7 @@ li {
     margin-top: 15px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 770px) {
     a,
     label,
     p {
@@ -192,7 +207,7 @@ li {
     }
 
     .facebook {
-        width: auto;
+        width: 80vw;
     }
 
     .top {
@@ -204,6 +219,19 @@ li {
         padding: 2px;
         margin-left: 2px;
         transform: scale(1.08);
+    }
+
+    .infoImg{
+        width: 90vw;
+        height: 300px;
+    }
+
+    .flexRow{
+        display: block;
+    }
+    
+    .flexReverse{
+        display: block;
     }
 
     .carousel-caption-empresa {
