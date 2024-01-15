@@ -189,6 +189,7 @@ li {
 
     .aRight {
         position: static;
+        text-wrap: nowrap;
     }
 
     a:hover {
