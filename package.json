@@ -1,0 +1,19 @@
+{
+  "name": "electricidad-pittana",
+  "version": "1.0.0",
+  "description": "Electricidad Pittana incluyendo Scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunatico0/Electricidad-Pittana.git"
+  },
+  "author": "Patricio Pittana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lunatico0/Electricidad-Pittana/issues"
+  },
+  "homepage": "https://github.com/Lunatico0/Electricidad-Pittana#readme"
+}
