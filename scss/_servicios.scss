@@ -1,0 +1,51 @@
+main{
+    .flexRow{
+        display: flex;
+        .infoImg{
+            width: 48vw;
+            max-width: 624px;
+            height: 416px;
+        }
+        .infoDescripcion{
+            font-size: 20px;
+            color: $blanquito;
+        }
+    }
+    .flexReverse{
+        display: flex;
+        flex-direction: row-reverse;
+        .infoImg{
+            width: 48vw;
+            max-width: 624px;
+            height: 416px;
+        }
+        .infoDescripcion{
+            font-size: 20px;
+            color: $blanquito;
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    main{
+        .flexRow{
+            display: block;
+            .infoImg{
+                width: 90vw;
+                height: 300px;
+            }
+            .infoDescripcion{
+                font-size: 15px;
+            }
+        }
+        .flexReverse{
+            display: block;
+            .infoImg{
+                width: 90vw;
+                height: 300px;
+            }
+            .infoDescripcion{
+                font-size: 15px;
+            }
+        }
+    }
+}

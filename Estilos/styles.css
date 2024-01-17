@@ -8,6 +8,17 @@
   font-family: "ethnocentric";
   src: url(../media/fonts/ethnocentric\ rg.otf);
 }
+body {
+  background-color: #212121;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  margin: 60px 0px 0px 0px;
+  padding-bottom: 60px;
+}
+
 a,
 label,
 p {
@@ -15,9 +26,8 @@ p {
   text-decoration: none;
   font-size: 1rem;
 }
-a a:hover,
-label a:hover,
-p a:hover {
+
+a:hover {
   text-decoration: underline;
   background-color: rgba(122, 110, 110, 0.4588235294);
   cursor: pointer;
@@ -27,84 +37,14 @@ p a:hover {
   transition: all ease 0.5s;
 }
 
-body {
-  background-color: #212121;
-  height: 100vh;
-  width: 100vw;
-}
-
-main {
-  margin: 60px 0px;
-  padding-bottom: 60px;
-}
-main .mainEmpresa {
-  margin: -110px 0px -70px 0px;
-}
-main .mainEmpresa .carousel-item-empresa {
-  height: 100vh;
-  min-height: 300px;
-}
-main .mainEmpresa .carousel-item-empresa .w-100-empresa {
-  height: 100vh;
-}
-main .mainEmpresa .carousel-item-empresa .carousel-caption-empresa {
-  position: relative;
-  bottom: 500px;
-}
-main .mainEmpresa .carousel-item-empresa .carousel-caption-empresa h2 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-  color: #fff;
-}
-main .mainEmpresa .carousel-item-empresa .carousel-caption-empresa p {
-  width: 60%;
-  margin: auto;
-  margin-top: 30px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 1.9;
-}
-main .mainEmpresa .carousel-item-empresa .carousel-caption-empresa a {
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #333;
-  padding: 10px 30px;
-  display: inline-block;
-  color: #000;
-  margin-top: 15px;
-}
-main h1 {
+h1 {
   color: rgba(255, 255, 255, 0.6862745098);
   background-color: #333;
   text-align: center;
   font-size: 30px;
 }
-main .historia h1 {
-  color: #fff;
-  background-color: rgba(51, 51, 51, 0.3568627451);
-  position: absolute;
-  top: 60px;
-  z-index: 1;
-}
-main .container-xxl .row .col-lg-4 .row .col-12 .carousel {
-  background-color: rgba(33, 33, 33, 0.6235294118);
-  height: 400px;
-}
-main .container-xxl .row .col-lg-4 .row .col-12 .carousel .imgCarrusel {
-  max-width: 350px;
-}
-main .container-xxl .row .col-lg-4 .row .col-12 .marcas {
-  font-size: 20px;
-  background-color: #333;
-}
-main .container-xxl .row .logo {
-  margin: auto;
-  padding: 20px 0px;
-}
 
-ul li {
+li {
   list-style: none;
 }
 
@@ -114,71 +54,271 @@ ul li {
   p {
     font-size: 14px;
   }
-  .aRight {
-    position: static;
-    text-wrap: nowrap;
-  }
   a:hover {
     padding: 5px 9px;
-  }
-  .top > a:hover {
-    padding: 0px 9px 5px 9px;
-  }
-  .estiloFooter {
-    height: 40px;
   }
   main {
     margin: 60px 0px;
   }
-  .facebook {
-    width: 80vw;
+  h1 {
+    font-size: 18px;
   }
-  .top {
-    position: absolute;
-    right: 10px;
-  }
+}
+.tituloG {
+  color: #bad9e4;
+  font-size: 15px;
+  text-shadow: rgb(255, 208, 0) 1px 0 5px;
+  font-family: "ethnocentric", sans-serif;
+}
+
+div ul .aRight {
+  position: absolute;
+  right: 5px;
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 770px) {
   .tituloG:hover {
     padding: 2px;
     margin-left: 2px;
     transform: scale(1.08);
   }
-  .infoImg {
-    width: 90vw;
-    height: 300px;
-  }
-  .flexRow {
-    display: block;
-  }
-  .flexReverse {
-    display: block;
-  }
-  .carousel-caption-empresa {
-    bottom: 565px;
-  }
-  .carousel-caption-empresa h2 {
-    font-size: 17px;
-    margin-top: 220px;
-  }
-  .carousel-caption-empresa a {
-    padding: 10px 15px;
-    font-size: 15px;
-  }
-  .carousel-caption-empresa p {
-    font-size: 11px;
-    margin-right: 50px;
-  }
-  h1 {
-    font-size: 16px;
+  div ul .aRight {
+    position: static;
     text-wrap: nowrap;
   }
-  .historia h1 {
+}
+main .container-xxl .row .col-lg-4 .row .col-12 .marcas {
+  color: rgba(255, 255, 255, 0.6862745098);
+  background-color: #333;
+  font-size: 20px;
+}
+main .container-xxl .row .col-lg-4 .row .col-12 .carousel {
+  background-color: rgba(33, 33, 33, 0.6235294118);
+  height: 400px;
+}
+main .container-xxl .row .col-lg-4 .row .col-12 .carousel .carousel-inner .carousel-item .imgCarrusel {
+  width: 350px;
+}
+main .container-xxl .row .logo {
+  margin: auto;
+  padding: 20px 0px;
+}
+
+main .historia h1 {
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.3568627451);
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+main .mainEmpresa {
+  margin: -110px 0px -70px 0px;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa {
+  height: 100vh;
+  min-height: 300px;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
+  height: 100vh;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa {
+  position: relative;
+  bottom: 500px;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  color: #fff;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+}
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p .aEmpresa {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #333;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #000;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 770px) {
+  main .historia h1 {
     margin-left: 20px;
     margin-right: 0px;
   }
+  main .mainEmpresa {
+    margin: -100px 0px -70px 0px;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa {
+    height: 100vh;
+    min-height: 300px;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
+    height: 100vh;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa {
+    bottom: 565px;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa h2 {
+    font-size: 17px;
+    margin-top: 220px;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p {
+    font-size: 11px;
+    margin-right: 50px;
+  }
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p .aEmpresa {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 350px) {
-  .historia h1 {
+  main .historia h1 {
     margin-top: 40px;
+  }
+}
+main .flexRow {
+  display: flex;
+}
+main .flexRow .infoImg {
+  width: 48vw;
+  max-width: 624px;
+  height: 416px;
+}
+main .flexRow .infoDescripcion {
+  font-size: 20px;
+  color: #fff;
+}
+main .flexReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main .flexReverse .infoImg {
+  width: 48vw;
+  max-width: 624px;
+  height: 416px;
+}
+main .flexReverse .infoDescripcion {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 770px) {
+  main .flexRow {
+    display: block;
+  }
+  main .flexRow .infoImg {
+    width: 90vw;
+    height: 300px;
+  }
+  main .flexRow .infoDescripcion {
+    font-size: 15px;
+  }
+  main .flexReverse {
+    display: block;
+  }
+  main .flexReverse .infoImg {
+    width: 90vw;
+    height: 300px;
+  }
+  main .flexReverse .infoDescripcion {
+    font-size: 15px;
+  }
+}
+main .flexRow {
+  display: flex;
+}
+main .flexRow .infoImg {
+  width: 48vw;
+  max-width: 624px;
+  height: 416px;
+}
+main .flexRow .infoDescripcion {
+  font-size: 20px;
+  color: #fff;
+}
+main .flexReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main .flexReverse .infoImg {
+  width: 48vw;
+  max-width: 624px;
+  height: 416px;
+}
+main .flexReverse .infoDescripcion {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 770px) {
+  main .flexRow {
+    display: block;
+  }
+  main .flexRow .infoImg {
+    width: 90vw;
+    height: 300px;
+  }
+  main .flexRow .infoDescripcion {
+    font-size: 15px;
+  }
+  main .flexReverse {
+    display: block;
+  }
+  main .flexReverse .infoImg {
+    width: 90vw;
+    height: 300px;
+  }
+  main .flexReverse .infoDescripcion {
+    font-size: 15px;
+  }
+}
+footer .estiloFooter {
+  background-color: #111;
+  display: grid;
+  width: 100vw;
+  height: 50px;
+}
+footer .estiloFooter .contenedorFooter .listaFooter {
+  display: flex;
+  gap: 1rem;
+}
+footer .estiloFooter .contenedorFooter .listaFooter .top {
+  position: absolute;
+  right: 50px;
+}
+footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
+  text-decoration: underline;
+  background-color: rgba(122, 110, 110, 0.4588235294);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0px 14px 5px 14px;
+  transform: scale(1.09);
+  transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 770px) {
+  footer .estiloFooter {
+    height: 40px;
+  }
+  footer .estiloFooter .contenedorFooter .listaFooter .top {
+    position: absolute;
+    right: 10px;
+  }
+  footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
+    padding: 0px 9px 5px 9px;
   }
 }
 

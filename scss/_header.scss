@@ -1,0 +1,31 @@
+.tituloG {
+    color: #bad9e4;
+    font-size: 15px;
+    text-shadow: rgb(255, 208, 0) 1px 0 5px;
+    font-family: $font-titulo;
+}
+
+div {
+    ul {
+        .aRight {
+            position: absolute;
+            right: 5px;
+            text-wrap: nowrap;
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    .tituloG:hover {
+        padding: 2px;
+        margin-left: 2px;
+        transform: scale(1.08);
+    }
+    div {
+        ul {
+            .aRight {
+                position: static;
+                text-wrap: nowrap;
+            }
+        }
+    }
+}

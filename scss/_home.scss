@@ -1,0 +1,36 @@
+
+main{
+    .container-xxl{
+        .row{
+            .col-lg-4{
+                .row{
+                    .col-12{
+                        .marcas {
+                            color: #ffffffaf;
+                            background-color: #333;
+                            font-size: 20px;
+                        }
+                        
+                        .carousel {
+                            background-color: #2121219f;
+                            height: 400px;
+                            .carousel-inner {
+                                .carousel-item {
+                                    .imgCarrusel {
+                                        width: 350px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logo {
+                margin: auto;
+                padding: 20px 0px;
+            }
+        }
+    }
+}
+
+
