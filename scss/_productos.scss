@@ -6,6 +6,9 @@ main{
             max-width: 624px;
             height: 416px;
         }
+        .infoImgLast{
+            margin-bottom: 50px;
+        }
         .infoDescripcion{
             font-size: 20px;
             color: $blanquito;
@@ -32,6 +35,9 @@ main{
             .infoImg{
                 width: 90vw;
                 height: 300px;
+            }
+            .infoImgLast{
+                margin-bottom: 0px;
             }
             .infoDescripcion{
                 font-size: 15px;
