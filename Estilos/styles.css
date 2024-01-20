@@ -117,12 +117,12 @@ main .historia h1 {
 main .mainEmpresa {
   margin: -110px 0px -70px 0px;
 }
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa {
+main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa, main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
   height: 100vh;
   min-height: 300px;
 }
 main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
-  height: 100vh;
+  min-height: auto;
 }
 main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa {
   position: relative;
@@ -161,7 +161,7 @@ main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-cap
   main .mainEmpresa {
     margin: -100px 0px -70px 0px;
   }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa {
+  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa, main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
     height: 100vh;
     min-height: 300px;
   }
@@ -193,9 +193,9 @@ main .flexRow {
   display: flex;
 }
 main .flexRow .infoImg {
-  width: 48vw;
-  max-width: 624px;
-  height: 416px;
+  width: 45vw;
+  max-width: 650px;
+  height: 450px;
 }
 main .flexRow .infoImgLast {
   margin-bottom: 50px;
@@ -209,9 +209,9 @@ main .flexReverse {
   flex-direction: row-reverse;
 }
 main .flexReverse .infoImg {
-  width: 48vw;
-  max-width: 624px;
-  height: 416px;
+  width: 45vw;
+  max-width: 650px;
+  height: 450px;
 }
 main .flexReverse .infoDescripcion {
   font-size: 20px;
@@ -224,7 +224,8 @@ main .flexReverse .infoDescripcion {
   }
   main .flexRow .infoImg {
     width: 90vw;
-    height: 300px;
+    max-width: 340px;
+    height: 280px;
   }
   main .flexRow .infoImgLast {
     margin-bottom: 0px;
@@ -237,7 +238,8 @@ main .flexReverse .infoDescripcion {
   }
   main .flexReverse .infoImg {
     width: 90vw;
-    height: 300px;
+    max-width: 340px;
+    height: 280px;
   }
   main .flexReverse .infoDescripcion {
     font-size: 15px;
@@ -278,6 +280,7 @@ main .flexReverse .infoDescripcion {
   }
   main .flexRow .infoImg {
     width: 90vw;
+    max-width: 1520px;
     height: 300px;
   }
   main .flexRow .infoDescripcion {
@@ -288,6 +291,7 @@ main .flexReverse .infoDescripcion {
   }
   main .flexReverse .infoImg {
     width: 90vw;
+    max-width: 1520px;
     height: 300px;
   }
   main .flexReverse .infoImgLast {

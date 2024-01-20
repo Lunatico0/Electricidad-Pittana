@@ -21,7 +21,8 @@ main {
                     min-height: 300px;
 
                     .w-100-empresa {
-                        height: 100vh;
+                        @extend .carousel-item-empresa;
+                        min-height: auto;
                     }
 
                     .carousel-caption-empresa {
