@@ -8,6 +8,7 @@ main {
             z-index: 1;
             margin-left: 35%;
             margin-right: 35%;
+            text-wrap: nowrap;
         }
     }
 
@@ -20,6 +21,11 @@ main {
                     height: 100vh;
                     min-height: 300px;
 
+                    img{
+                        height: 918px;
+                        margin: auto;
+                    }
+
                     .w-100-empresa {
                         @extend .carousel-item-empresa;
                         min-height: auto;
@@ -27,7 +33,9 @@ main {
 
                     .carousel-caption-empresa {
                         position: relative;
-                        bottom: 500px;
+                        bottom: 700px;
+                        width: 710px;
+                        left: 10px;
 
                         h2 {
                             font-size: 45px;
@@ -85,7 +93,8 @@ main {
                         }
 
                         .carousel-caption-empresa {
-                            bottom: 565px;
+                            bottom: 450px;
+                            width: 100%;
 
                             h2 {
                                 font-size: 17px;
@@ -94,7 +103,8 @@ main {
 
                             p {
                                 font-size: 11px;
-                                margin-right: 50px;
+                                margin-right: 45px;
+                                width: 80%;
 
                                 .aEmpresa {
                                     padding: 10px 15px;

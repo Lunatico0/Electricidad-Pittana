@@ -8,8 +8,8 @@ main{
             margin-bottom: 50px;
         }
         .infoDescripcion{
-            font-size: 20px;
-            color: $blanquito;
+            font-size: map-get($descripcion, textTam);
+            color: map-get($descripcion, textColor);
         }
     }
     .flexReverse{
@@ -19,8 +19,8 @@ main{
             @include infoImge(45vw, 650px, 450px);
         }
         .infoDescripcion{
-            font-size: 20px;
-            color: $blanquito;
+            font-size: map-get($descripcion, textTam);
+            color: map-get($descripcion, textColor);
         }
     }
 }
