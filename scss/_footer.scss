@@ -1,6 +1,6 @@
 footer{
     .estiloFooter {
-        background-color: #111;
+        background-color: $secundario;
         display: grid;
         width: 100vw;
         height: 50px;
@@ -13,10 +13,9 @@ footer{
                     right: 50px;
                     &:hover {
                         text-decoration: underline;
-                        background-color: #7a6e6e75;
+                        background-color: $color-Hover;
                         cursor: pointer;
                         border-radius: 5px;
-                        padding: 0px 14px 5px 14px;
                         transform: scale(1.09);
                         transition: all ease .5s;
                     }
@@ -28,15 +27,12 @@ footer{
 @media only screen and (max-width: 770px) {
     footer{
         .estiloFooter {
-            height: 40px;
+            height: 45px;
             .contenedorFooter{
                 .listaFooter {
                     .top {
                         position: absolute;
                         right: 10px;
-                        &:hover {
-                            padding: 0px 9px 5px 9px;
-                        }
                     }
                 }
             }

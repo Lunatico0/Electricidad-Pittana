@@ -28,7 +28,7 @@
 
 <body class="container-fluid">
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark border-bottom border-body fixed-top"
+        <nav class="navBar navbar border-bottom border-body navbar-expand-md fixed-top"
             data-bs-theme="dark">
             <div class="container-xxl">
                 <a class="navbar-brand tituloG" href="../index.html">Electricidad Pittana</a>
@@ -38,12 +38,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="./productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./empresa.html">Empresa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link aRight" href="#">Ingreso Clientes</a></li>
+                        <li class="nav-item"><a class="liNav nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="liNav nav-link" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="liNav nav-link current" href="#">Servicios</a></li>
+                        <li class="nav-item"><a class="liNav nav-link" href="./empresa.html">Empresa</a></li>
+                        <li class="nav-item"><a class="liNav nav-link" href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="liNav nav-link aRight" href="#">Ingreso Clientes</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,25 +55,25 @@
     <main>
         <div class="container-xxl">
             <h1> Los servicios que te ofrecemos en nuestro Taller </h1>
-            <div class="flexReverse" data-aos="fade-left">
+            <div class="flexReverse">
                 <img class="infoImg mx-auto container-lg d-lg-flex flex-col-6" src="../media/img/servicios_Alternador.jpg" loading="lazy" alt="alternador2">
                 <p class="infoDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Reparacion de Alternadores, Cambio de Carbones, Reparacion y cambio Reguladores de voltaje, Conexionado y Cableado de intalacion, etc</p>
             </div>
-            <div class="flexRow" data-aos="fade-right">
+            <div class="flexRow">
                 <img class="infoImg mx-auto container-lg d-lg-flex flex-col-6" src="../media/img/servicios_Arranque.jpg" loading="lazy" alt="arranque">
                 <p class="infoDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Reparacion de Arranques completos, Reparacion y Cambio de Bobinas, Recambio de Bujes, Reemplazo de Porta escobillas, Escobillas, Cambio de Tambor de arranque, etc</p>
             </div>
-            <div class="flexReverse" data-aos="fade-left">
+            <div class="flexReverse">
                 <img class="infoImg mx-auto container-lg d-lg-flex flex-col-6" src="../media/img/servicios_bateria.jpeg" loading="lazy" alt="bateria">
                 <p class="infoDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Recambio de Baterias, Bornes, Terminales, Cableado general, y todo tipo de accesorio</p>
             </div>
-            <div class="flexRow" data-aos="fade-right">
+            <div class="flexRow">
                 <img class="infoImg mx-auto container-lg d-lg-flex flex-col-6" src="../media/img/servicios_Luces.jpeg" loading="lazy" alt="faros">
                 <p class="infoDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Recambio de Faros, Instalacion de Focos led, Recambio e intalacion de Focos alogenos, Instalacion de Reles, Instalacion de Tiras led, etc </p>
             </div>
-            <div class="flexReverse" data-aos="fade-left">
+            <div class="flexReverse">
                 <img class="infoImgLast infoImg mx-auto container-lg d-lg-flex flex-col-6" src="../media/img/servicios_inyectores.jpg" loading="lazy" alt="inyeccion">
-                <p class="infoDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Recambio e Instalacion de Sensores de arboles de leva, Filtros de combustible, Bombas de combustible, etc</p>
+                <p class="infoDescripcion lastDescripcion d-block my-auto container-lg mx-auto-lg w-100 d-lg-flex flex-col-6">Recambio e Instalacion de Sensores de arboles de leva, Filtros de combustible, Bombas de combustible, etc</p>
             </div>
         </div>
     </main>
@@ -81,12 +81,11 @@
 
 
     <footer>
-        <div class="estiloFooter navbar navbar-expand-md bg-body-tertiary bg-dark border-bottom border-body fixed-bottom d-flex justify-content-center"
+        <div class="estiloFooter navbar navbar-expand-md border-bottom border-body fixed-bottom d-flex justify-content-center"
             data-bs-theme="dark">
             <div class="contenedorFooter container-xxl d-flex justify-content-center">
                 <ul class="listaFooter ">
-                    <li class="liSocials"><a target="_blank" aria-label="Llamanos a nuesto telefono" href="tel:3435616470"><i class="bi bi-telephone"></i></a>
-                    </li>
+                    <li class="liSocials"><a target="_blank" aria-label="Llamanos a nuesto telefono" href="tel:3435616470"><i class="bi bi-telephone"></i></a></li>
                     <li class="liSocials"><a target="_blank" aria-label="Envianos un mail" href="mailto:angelpittana@hotmail.com"><i class="bi bi-envelope"></i></a></li>
                     <li class="liSocials"><a target="_blank" aria-label="Nuestro facebook" href="https://www.facebook.com/profile.php?id=100063676235506"><i class="bi bi-facebook"></i></a></li>
                     <li class="liSocials"><a target="_blank" aria-label="Nuestro Instagram" href="https://www.instagram.com/electricidad_pittana/"><i class="bi bi-instagram"></i></a></li>

@@ -2,7 +2,12 @@ main{
     .flexRow{
         display: flex;
         .infoImg{
-            @include infoImge(48vw, 624px, 416px);
+            @include infoImge(45vw, 650px, 450px);
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+            animation-timeline: --image;
+            animation-name: zoomOut;
+            animation-range: entry 25% cover 50%;
         }
         .infoDescripcion{
             font-size: map-get($descripcion, textTam);
@@ -13,7 +18,12 @@ main{
         display: flex;
         flex-direction: row-reverse;
         .infoImg{
-            @include infoImge(48vw, 624px, 416px);
+            @include infoImge(45vw, 624px, 416px);
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+            animation-timeline: --image;
+            animation-name: zoomIn;
+            animation-range: entry 25% cover 50%;
         }
         .infoImgLast{
             margin-bottom: 50px;
@@ -29,7 +39,7 @@ main{
         .flexRow{
             display: block;
             .infoImg{
-                @include infoImge(90vw, 1520px, 300px);
+                @include infoImge(80vw, 1520px, 300px);
             }
             .infoDescripcion{
                 font-size: 15px;
@@ -38,10 +48,13 @@ main{
         .flexReverse{
             display: block;
             .infoImg{
-                @include infoImge(90vw, 1520px, 300px);
+                @include infoImge(80vw, 1520px, 300px);
             }
             .infoImgLast{
                 margin-bottom: 0px;
+            }
+            .lastDescripcion{
+                padding-bottom: 70px;
             }
             .infoDescripcion{
                 font-size: 15px;

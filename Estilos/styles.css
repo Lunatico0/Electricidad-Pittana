@@ -25,14 +25,15 @@ main {
 a,
 label,
 p {
-  color: white;
+  color: #c9c9c9;
   text-decoration: none;
   font-size: 1rem;
 }
 
 a:hover {
   text-decoration: underline;
-  background-color: rgba(122, 110, 110, 0.4588235294);
+  background-color: #67d2da;
+  color: #1c1211;
   cursor: pointer;
   border-radius: 5px;
   padding: 5px 13px 7px 13px;
@@ -41,9 +42,10 @@ a:hover {
 }
 
 h1 {
-  color: rgba(255, 255, 255, 0.6862745098);
+  color: #c9c9c9;
   background-color: #333;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
 
@@ -61,39 +63,94 @@ li {
     padding: 5px 9px;
   }
   main {
-    margin: 60px 0px;
+    margin: 60px 0px 80px 0px;
   }
   h1 {
     font-size: 18px;
   }
 }
-.tituloG {
+@keyframes fadeLeft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes fadeRight {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    scale: 115%;
+    overflow-x: hidden;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+header .navBar {
+  background-color: #1c1211;
+}
+header .navBar div .tituloG {
   color: #bad9e4;
-  font-size: 15px;
+  font-size: 16px;
   text-shadow: rgb(255, 208, 0) 1px 0 5px;
   font-family: "ethnocentric", sans-serif;
   transition: all 300ms;
 }
-
-div ul .aRight {
+header .navBar div .tituloG:hover {
+  padding: 5px 13px;
+  color: #1c1211;
+}
+header .navBar div div ul li .liNav {
+  color: #c9c9c9;
+}
+header .navBar div div ul li .liNav:hover {
+  color: #1c1211;
+}
+header .navBar div div ul li .aRight {
   position: absolute;
   right: 5px;
   text-wrap: nowrap;
 }
-
+header .navBar div div ul li .aRight:hover {
+  padding: 5px 13px;
+  color: #1c1211;
+  text-wrap: nowrap;
+}
 @media only screen and (max-width: 770px) {
-  .tituloG:hover {
-    padding: 2px;
-    margin-left: 2px;
-    transform: scale(1.08);
-  }
-  div ul .aRight {
+  header .navBar div div ul li .aRight {
     position: static;
-    text-wrap: nowrap;
   }
 }
+header .navBar div div ul li .current {
+  background-color: #3dd1ff;
+  color: #1c1211;
+  border-radius: 5px;
+  text-decoration: underline;
+  padding: 5px 13px 7px 13px;
+}
+
 main .container-xxl .row .col-lg-4 .row .col-12 .marcas {
-  color: rgba(255, 255, 255, 0.6862745098);
+  color: #c9c9c9;
   background-color: #333;
   font-size: 20px;
 }
@@ -109,8 +166,13 @@ main .container-xxl .row .logo {
   padding: 20px 0px;
 }
 
+@media only screen and (max-width: 770px) {
+  .boton {
+    margin-bottom: 50px;
+  }
+}
 main .historia h1 {
-  color: #fff;
+  color: #c9c9c9;
   background-color: rgba(51, 51, 51, 0.3568627451);
   position: absolute;
   top: 60px;
@@ -144,7 +206,8 @@ main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-cap
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 25px;
-  color: #fff;
+  color: #c9c9c9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p {
   width: 60%;
@@ -209,13 +272,18 @@ main .flexRow .infoImg {
   width: 45vw;
   max-width: 650px;
   height: 450px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: zoomIn;
+  animation-range: entry 25% cover 50%;
 }
 main .flexRow .infoImgLast {
   margin-bottom: 50px;
 }
 main .flexRow .infoDescripcion {
   font-size: 20px;
-  color: #fff;
+  color: #c9c9c9;
 }
 main .flexReverse {
   display: flex;
@@ -225,23 +293,34 @@ main .flexReverse .infoImg {
   width: 45vw;
   max-width: 650px;
   height: 450px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: zoomOut;
+  animation-range: entry 25% cover 50%;
 }
 main .flexReverse .infoDescripcion {
   font-size: 20px;
-  color: #fff;
+  color: #c9c9c9;
 }
 
 @media only screen and (max-width: 770px) {
+  main {
+    width: 90vw;
+  }
   main .flexRow {
     display: block;
   }
   main .flexRow .infoImg {
-    width: 90vw;
+    width: 80vw;
     max-width: 340px;
     height: 280px;
   }
   main .flexRow .infoImgLast {
     margin-bottom: 0px;
+  }
+  main .flexRow .lastDescripcion {
+    margin-bottom: 50px;
   }
   main .flexRow .infoDescripcion {
     font-size: 15px;
@@ -250,7 +329,7 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexReverse .infoImg {
-    width: 90vw;
+    width: 80vw;
     max-width: 340px;
     height: 280px;
   }
@@ -262,29 +341,39 @@ main .flexRow {
   display: flex;
 }
 main .flexRow .infoImg {
-  width: 48vw;
-  max-width: 624px;
-  height: 416px;
+  width: 45vw;
+  max-width: 650px;
+  height: 450px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: zoomOut;
+  animation-range: entry 25% cover 50%;
 }
 main .flexRow .infoDescripcion {
   font-size: 20px;
-  color: #fff;
+  color: #c9c9c9;
 }
 main .flexReverse {
   display: flex;
   flex-direction: row-reverse;
 }
 main .flexReverse .infoImg {
-  width: 48vw;
+  width: 45vw;
   max-width: 624px;
   height: 416px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: zoomIn;
+  animation-range: entry 25% cover 50%;
 }
 main .flexReverse .infoImgLast {
   margin-bottom: 50px;
 }
 main .flexReverse .infoDescripcion {
   font-size: 20px;
-  color: #fff;
+  color: #c9c9c9;
 }
 
 @media only screen and (max-width: 770px) {
@@ -292,7 +381,7 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexRow .infoImg {
-    width: 90vw;
+    width: 80vw;
     max-width: 1520px;
     height: 300px;
   }
@@ -303,19 +392,22 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexReverse .infoImg {
-    width: 90vw;
+    width: 80vw;
     max-width: 1520px;
     height: 300px;
   }
   main .flexReverse .infoImgLast {
     margin-bottom: 0px;
   }
+  main .flexReverse .lastDescripcion {
+    padding-bottom: 70px;
+  }
   main .flexReverse .infoDescripcion {
     font-size: 15px;
   }
 }
 footer .estiloFooter {
-  background-color: #111;
+  background-color: #1c1211;
   display: grid;
   width: 100vw;
   height: 50px;
@@ -333,21 +425,17 @@ footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
   background-color: rgba(122, 110, 110, 0.4588235294);
   cursor: pointer;
   border-radius: 5px;
-  padding: 0px 14px 5px 14px;
   transform: scale(1.09);
   transition: all ease 0.5s;
 }
 
 @media only screen and (max-width: 770px) {
   footer .estiloFooter {
-    height: 40px;
+    height: 45px;
   }
   footer .estiloFooter .contenedorFooter .listaFooter .top {
     position: absolute;
     right: 10px;
-  }
-  footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
-    padding: 0px 9px 5px 9px;
   }
 }
 

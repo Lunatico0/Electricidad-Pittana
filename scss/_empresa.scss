@@ -1,7 +1,7 @@
 main {
     .historia {
         h1 {
-            color: #fff;
+            color: $cTexto;
             background-color: #3333335b;
             position: absolute;
             top: 60px;
@@ -42,7 +42,8 @@ main {
                             text-transform: uppercase;
                             letter-spacing: 2px;
                             margin-top: 25px;
-                            color: $blanquito;
+                            color: $cTexto;
+                            font-family: $titulos;
                         }
 
                         p {
