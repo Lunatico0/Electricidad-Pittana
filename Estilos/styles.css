@@ -151,24 +151,59 @@ header .navBar div div ul li .current {
   padding: 5px 13px 7px 13px;
 }
 
-main .container-xxl .row .col-lg-4 .row .col-12 .marcas {
+.home .container-xxl .row .col-lg-4 .row .col-12 .marcas {
   color: #c9c9c9;
   background-color: #333;
   font-size: 20px;
 }
-main .container-xxl .row .col-lg-4 .row .col-12 .carousel {
+.home .container-xxl .row .col-lg-4 .row .col-12 .carousel {
   background-color: rgba(33, 33, 33, 0.6235294118);
   height: 400px;
 }
-main .container-xxl .row .col-lg-4 .row .col-12 .carousel .carousel-inner .carousel-item .imgCarrusel {
+.home .container-xxl .row .col-lg-4 .row .col-12 .carousel .carousel-inner .carousel-item .imgCarrusel {
   width: 350px;
 }
-main .container-xxl .row .logo {
+.home .container-xxl .row .col-lg-4 .row .col-12 form button a {
+  color: white;
+  padding: 6px 56px;
+}
+.home .container-xxl .row .col-lg-4 .row .col-12 form button a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0;
+  transform: scale(1);
+}
+@media only screen and (max-width: 768px) {
+  .home .container-xxl .row .col-lg-4 .row .col-12 form button a {
+    padding: 6px 41px;
+  }
+  .home .container-xxl .row .col-lg-4 .row .col-12 form button a:hover {
+    padding: 0;
+  }
+}
+.home .container-xxl .row .logo {
   margin: auto;
   padding: 20px 0px;
 }
+.home .container-xxl .row .logo .logoImg {
+  display: block;
+  margin-top: -15%;
+  width: 100%;
+}
+.home .container-xxl .row .logo .logoAuto {
+  display: flex;
+  width: 50%;
+  margin-top: -20%;
+  margin-left: 25%;
+}
 
 @media only screen and (max-width: 991px) {
+  .home {
+    padding-top: 40px;
+  }
   .boton {
     margin-bottom: 70px;
   }
@@ -437,6 +472,75 @@ main .flexReverse .infoDescripcion {
   right: 5vw;
 }
 .box .empresa div div div .carouselCaption .saberMas .aEmpresa {
+  background-color: #3dd1ff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+main div .row div form div button a {
+  color: white;
+  padding: 6px 56px;
+}
+main div .row div form div button a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0;
+  transform: scale(1);
+}
+@media only screen and (max-width: 768px) {
+  main div .row div form div button a {
+    padding: 6px 30px;
+  }
+  main div .row div form div button a:hover {
+    padding: 0;
+  }
+}
+
+.error {
+  padding: 0;
+  margin: 0;
+}
+.error div {
+  width: 100vw;
+  height: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.error div img {
+  width: 50%;
+  margin-top: 90px;
+}
+@media only screen and (max-width: 768px) {
+  .error div img {
+    width: 90%;
+    margin-top: 190px;
+  }
+}
+.error div h1 {
+  position: fixed;
+  top: 80px;
+  width: 100vw;
+  background-color: #67d2da;
+  color: #1c1211;
+}
+.error div div button {
+  position: fixed;
+  bottom: 55px;
+  right: 5vw;
+  border-radius: 5px;
+}
+.error div div button a {
   background-color: #3dd1ff;
   color: #000;
   border-radius: 5px;
