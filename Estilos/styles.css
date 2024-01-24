@@ -19,7 +19,9 @@ body {
 }
 
 main {
+  width: 96vw;
   margin: 60px 0px 0px 0px;
+  padding-bottom: 60px;
 }
 
 a,
@@ -166,104 +168,13 @@ main .container-xxl .row .logo {
   padding: 20px 0px;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 991px) {
   .boton {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
-main .historia h1 {
-  color: #c9c9c9;
-  background-color: rgba(51, 51, 51, 0.3568627451);
-  position: absolute;
-  top: 60px;
-  z-index: 1;
-  margin-left: 35%;
-  margin-right: 35%;
-  text-wrap: nowrap;
-}
-main .mainEmpresa {
-  margin: -110px 0px -70px 0px;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa, main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
-  height: 100vh;
-  min-height: 300px;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa img, main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa img {
-  height: 918px;
-  margin: auto;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
-  min-height: auto;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa {
-  position: relative;
-  bottom: 700px;
-  width: 710px;
-  left: 10px;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa h2 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-  color: #c9c9c9;
-  font-family: Arial, Helvetica, sans-serif;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p {
-  width: 60%;
-  margin: auto;
-  margin-top: 30px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 1.9;
-}
-main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p .aEmpresa {
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #333;
-  padding: 10px 30px;
-  display: inline-block;
-  color: #000;
-  margin-top: 15px;
-}
-
-@media only screen and (max-width: 770px) {
-  main .historia h1 {
-    margin-left: 20px;
-    margin-right: 0px;
-  }
-  main .mainEmpresa {
-    margin: -100px 0px -70px 0px;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa, main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
-    height: 100vh;
-    min-height: 300px;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .w-100-empresa {
-    height: 100vh;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa {
-    bottom: 450px;
-    width: 100%;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa h2 {
-    font-size: 17px;
-    margin-top: 220px;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p {
-    font-size: 11px;
-    margin-right: 45px;
-    width: 80%;
-  }
-  main .mainEmpresa .carousel .carousel-inner .carousel-item-empresa .carousel-caption-empresa p .aEmpresa {
-    padding: 10px 15px;
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  main .historia h1 {
-    margin-top: 40px;
-  }
+main {
+  margin: 60px 0px 0px 0px;
 }
 main .flexRow {
   display: flex;
@@ -284,6 +195,8 @@ main .flexRow .infoImgLast {
 main .flexRow .infoDescripcion {
   font-size: 20px;
   color: #c9c9c9;
+  margin: auto;
+  text-align: center;
 }
 main .flexReverse {
   display: flex;
@@ -296,31 +209,31 @@ main .flexReverse .infoImg {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
-  animation-name: zoomOut;
+  animation-name: zoomIn;
   animation-range: entry 25% cover 50%;
 }
 main .flexReverse .infoDescripcion {
   font-size: 20px;
   color: #c9c9c9;
+  margin: auto;
+  text-align: center;
 }
 
 @media only screen and (max-width: 770px) {
-  main {
-    width: 90vw;
-  }
   main .flexRow {
     display: block;
   }
   main .flexRow .infoImg {
-    width: 80vw;
+    width: 90vw;
     max-width: 340px;
     height: 280px;
+    animation-name: zoomIn;
   }
   main .flexRow .infoImgLast {
     margin-bottom: 0px;
   }
   main .flexRow .lastDescripcion {
-    margin-bottom: 50px;
+    padding-bottom: 70px;
   }
   main .flexRow .infoDescripcion {
     font-size: 15px;
@@ -329,13 +242,16 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexReverse .infoImg {
-    width: 80vw;
+    width: 90vw;
     max-width: 340px;
     height: 280px;
   }
   main .flexReverse .infoDescripcion {
     font-size: 15px;
   }
+}
+main {
+  margin: 60px 0px 0px 0px;
 }
 main .flexRow {
   display: flex;
@@ -347,7 +263,7 @@ main .flexRow .infoImg {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
-  animation-name: zoomOut;
+  animation-name: zoomIn;
   animation-range: entry 25% cover 50%;
 }
 main .flexRow .infoDescripcion {
@@ -381,7 +297,7 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexRow .infoImg {
-    width: 80vw;
+    width: 90vw;
     max-width: 1520px;
     height: 300px;
   }
@@ -392,9 +308,10 @@ main .flexReverse .infoDescripcion {
     display: block;
   }
   main .flexReverse .infoImg {
-    width: 80vw;
+    width: 90vw;
     max-width: 1520px;
     height: 300px;
+    animation-name: zoomIn;
   }
   main .flexReverse .infoImgLast {
     margin-bottom: 0px;
@@ -406,6 +323,130 @@ main .flexReverse .infoDescripcion {
     font-size: 15px;
   }
 }
+.box {
+  margin: 40px 0px 0px 0px;
+  padding: 0;
+}
+.box div .tPrincipal {
+  background-color: rgba(0, 0, 0, 0.616);
+  color: #c9c9c9;
+  font-weight: bold;
+  border-radius: 10px;
+  z-index: 1;
+  position: fixed;
+  top: 60px;
+  margin-left: 34%;
+  margin-right: 34%;
+}
+@media only screen and (max-width: 768px) {
+  .box div .tPrincipal {
+    margin: 0;
+    border-radius: 5px;
+  }
+}
+.box .empresa {
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+}
+.box .empresa div .botones {
+  margin-left: -1500px;
+}
+.box .empresa div div div {
+  width: 100%;
+  height: 100%;
+}
+.box .empresa div div div .imgEmpresa {
+  display: block;
+  height: 90vh;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .box .empresa div div div .imgEmpresa {
+    width: 150vw;
+    height: 90vh;
+    margin-left: -90px;
+  }
+}
+.box .empresa div div div .carouselCaption {
+  display: flex;
+}
+.box .empresa div div div .carouselCaption .titulo {
+  color: #c9c9c9;
+  position: fixed;
+  left: 50px;
+  top: 150px;
+  animation-delay: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .box .empresa div div div .carouselCaption .titulo {
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 45%;
+  }
+}
+.box .empresa div div div .carouselCaption .historiaUno, .box .empresa div div div .carouselCaption .historiaTres, .box .empresa div div div .carouselCaption .historiaDos {
+  display: block;
+  color: #c9c9c9;
+  margin-top: 20%;
+  margin-left: 55%;
+  width: 29vw;
+  animation-delay: 1s;
+}
+@media only screen and (max-width: 768px) {
+  .box .empresa div div div .carouselCaption .historiaUno, .box .empresa div div div .carouselCaption .historiaTres, .box .empresa div div div .carouselCaption .historiaDos {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 110%;
+    margin-left: 15%;
+    height: 155px;
+    width: 65vw;
+  }
+}
+.box .empresa div div div .carouselCaption .historiaDos {
+  width: 23vw;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .box .empresa div div div .carouselCaption .historiaDos {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 110%;
+    margin-left: 15%;
+    height: 32%;
+    width: 65vw;
+  }
+}
+.box .empresa div div div .carouselCaption .historiaTres {
+  width: 21vw;
+  margin-top: 10%;
+  margin-left: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .box .empresa div div div .carouselCaption .historiaTres {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 110%;
+    margin-left: 15%;
+    height: 35%;
+    width: 65vw;
+  }
+}
+.box .empresa div div div .carouselCaption .saberMas {
+  animation-delay: 1.5s;
+  position: fixed;
+  bottom: 55px;
+  right: 5vw;
+}
+.box .empresa div div div .carouselCaption .saberMas .aEmpresa {
+  background-color: #3dd1ff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
 footer .estiloFooter {
   background-color: #1c1211;
   display: grid;

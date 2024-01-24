@@ -1,4 +1,5 @@
 main{
+    margin: 60px 0px 0px 0px;
     .flexRow{
         display: flex;
         .infoImg{
@@ -15,6 +16,8 @@ main{
         .infoDescripcion{
             font-size: map-get($descripcion, textTam);
             color: map-get($descripcion, textColor);
+            margin: auto;
+            text-align: center;
         }
     }
     .flexReverse{
@@ -25,28 +28,30 @@ main{
             view-timeline-name: --image;
             view-timeline-axis: block;
             animation-timeline: --image;
-            animation-name: zoomOut;
+            animation-name: zoomIn;
             animation-range: entry 25% cover 50%;
         }
         .infoDescripcion{
             font-size: map-get($descripcion, textTam);
             color: map-get($descripcion, textColor);
+            margin: auto;
+            text-align: center;
         }
     }
 }
 @media only screen and (max-width: 770px) {
     main{
-        width: 90vw;
         .flexRow{
             display: block;
             .infoImg{
-                @include infoImge(80vw, 340px, 280px);
+                @include infoImge(90vw, 340px, 280px);
+                animation-name: zoomIn;
             }
             .infoImgLast{
                 margin-bottom: 0px;
             }
             .lastDescripcion{
-                margin-bottom: 50px;
+                padding-bottom: 70px;
             }
             .infoDescripcion{
                 font-size: 15px;
@@ -55,7 +60,7 @@ main{
         .flexReverse{
             display: block;
             .infoImg{
-                @include infoImge(80vw, 340px, 280px);
+                @include infoImge(90vw, 340px, 280px);
             }
             .infoDescripcion{
                 font-size: 15px;

@@ -1,67 +1,114 @@
-main {
-    .historia {
-        h1 {
+.box{
+    margin: 40px 0px 0px 0px;
+    padding: 0;
+    div{
+        .tPrincipal{
+            background-color: rgba(0, 0, 0, 0.616);
             color: $cTexto;
-            background-color: #3333335b;
-            position: absolute;
-            top: 60px;
+            font-weight: bold;
+            border-radius: 10px;
             z-index: 1;
-            margin-left: 35%;
-            margin-right: 35%;
-            text-wrap: nowrap;
+            position: fixed;
+            top: 60px;
+            margin-left: 34%;
+            margin-right: 34%;
+            @media only screen and (max-width: 768px){
+                margin: 0;
+                border-radius: 5px;
+            }
         }
     }
-
-    .mainEmpresa {
-        margin: -110px 0px -70px 0px;
-
-        .carousel {
-            .carousel-inner {
-                .carousel-item-empresa {
-                    height: 100vh;
-                    min-height: 300px;
-
-                    img{
-                        height: 918px;
+    .empresa{
+        width: 100vw;
+        height: 90vh;
+        margin: 0;
+        div{
+            .botones{
+                margin-left: -1500px;
+            }
+            div{
+                div{
+                    width: 100%;
+                    height: 100%;
+                    .imgEmpresa{
+                        display: block;
+                        height: 90vh;
                         margin: auto;
-                    }
-
-                    .w-100-empresa {
-                        @extend .carousel-item-empresa;
-                        min-height: auto;
-                    }
-
-                    .carousel-caption-empresa {
-                        position: relative;
-                        bottom: 700px;
-                        width: 710px;
-                        left: 10px;
-
-                        h2 {
-                            font-size: 45px;
-                            text-transform: uppercase;
-                            letter-spacing: 2px;
-                            margin-top: 25px;
-                            color: $cTexto;
-                            font-family: $titulos;
+                        margin-top: 10px;
+                        @media only screen and (max-width: 768px){
+                            width: 150vw;
+                            height: 90vh;
+                            margin-left: -90px;
                         }
-
-                        p {
-                            width: 60%;
-                            margin: auto;
-                            margin-top: 30px;
-                            font-size: 18px;
-                            letter-spacing: 1px;
-                            line-height: 1.9;
-
-                            .aEmpresa {
-                                text-transform: uppercase;
-                                text-decoration: none;
-                                background: $background-h1;
+                    }
+                    .carouselCaption{
+                        display: flex;
+                        .titulo{
+                            color: $cTexto;
+                            position: fixed;
+                            left: 50px;
+                            top: 150px;
+                            animation-delay: .5s;
+                            @media only screen and (max-width: 768px){
+                                background-color: rgba(0, 0, 0, 0.616);
+                                top: 45%;
+                            }
+                        }
+                        .historiaUno{
+                            display: block;
+                            color: $cTexto;
+                            margin-top: 20%;
+                            margin-left: 55%;
+                            width: 29vw;
+                            animation-delay: 1s;
+                            @media only screen and (max-width: 768px){
+                                background-color: rgba(0, 0, 0, 0.616);
+                                margin-top: 110%;
+                                margin-left: 15%;
+                                height: 155px;
+                                width: 65vw;
+                            }
+                        }
+                        .historiaDos{
+                            @extend .historiaUno;
+                            width: 23vw;
+                            margin-top: 15%;
+                            margin-left: 60%;
+                            @media only screen and (max-width: 768px){
+                                background-color: rgba(0, 0, 0, 0.616);
+                                margin-top: 110%;
+                                margin-left: 15%;
+                                height: 32%;
+                                width: 65vw;
+                            }
+                        }
+                        .historiaTres{
+                            @extend .historiaUno;
+                            width: 21vw;
+                            margin-top: 10%;
+                            margin-left: 60%;
+                            @media only screen and (max-width: 768px){
+                                background-color: rgba(0, 0, 0, 0.616);
+                                margin-top: 110%;
+                                margin-left: 15%;
+                                height: 35%;
+                                width: 65vw;
+                            }
+                        }
+                        .saberMas{
+                            animation-delay: 1.5s;
+                            position: fixed;
+                            bottom: 55px;
+                            right: 5vw;
+                            .aEmpresa{
+                                background-color: $acento;
+                                color: #000;
+                                border-radius: 5px;
                                 padding: 10px 30px;
                                 display: inline-block;
-                                color: #000;
-                                margin-top: 15px;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                text-wrap: nowrap;
                             }
                         }
                     }
@@ -71,61 +118,254 @@ main {
     }
 }
 
-@media only screen and (max-width: 770px) {
-    main {
-        .historia {
-            h1 {
-                margin-left: 20px;
-                margin-right: 0px;
-            }
-        }
+// .empresa {
+//     width: 100vw;
+//     .historia {
+//         h1 {
+//             position: absolute;
+//             left: 680px;
+//             color: $cTexto;
+//             background-color: $color-Hover;
+//             top: 60px;
+//             z-index: 1;
+//             text-wrap: nowrap;
+//         }
+//     }
 
-        .mainEmpresa {
-            margin: -100px 0px -70px 0px;
+//     .mainEmpresa {
+//         margin: -110px 0px -70px 0px;
 
-            .carousel {
-                .carousel-inner {
-                    .carousel-item-empresa {
-                        height: 100vh;
-                        min-height: 300px;
+//         .carousel {
+//             .carousel-inner {
+//                 .carousel-item-empresa {
+//                     height: 100vh;
+//                     min-height: 300px;
 
-                        .w-100-empresa {
-                            height: 100vh;
-                        }
+//                     img{
+//                         height: 918px;
+//                         margin: auto;
+//                     }
 
-                        .carousel-caption-empresa {
-                            bottom: 450px;
-                            width: 100%;
+//                     .w-100-empresa {
+//                         @extend .carousel-item-empresa;
+//                         min-height: auto;
+//                     }
 
-                            h2 {
-                                font-size: 17px;
-                                margin-top: 220px;
-                            }
+//                     .carousel-caption-empresa {
+//                         position: relative;
+//                         bottom: 700px;
+//                         width: 100vw;
+//                         left: 10px;
 
-                            p {
-                                font-size: 11px;
-                                margin-right: 45px;
-                                width: 80%;
+//                         h2 {
+//                             position: relative;
+//                             text-wrap: nowrap;
+//                             left: 30px;
+//                             width: 17%;
+//                             font-size: 45px;
+//                             text-transform: uppercase;
+//                             letter-spacing: 2px;
+//                             margin-top: 25px;
+//                             color: $cTexto;
+//                             font-family: $titulos;
+//                         }
 
-                                .aEmpresa {
-                                    padding: 10px 15px;
-                                    font-size: 15px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         p {
+//                             text-align: center;
+//                             position: absolute;
+//                             width: 23%;
+//                             margin: auto;
+//                             margin-top: 50px;
+//                             font-size: 18px;
+//                             letter-spacing: 1px;
+//                             line-height: 1.9;
+//                             right: 80px;
 
-@media only screen and (max-width: 350px) {
-    main {
-        .historia {
-            h1 {
-                margin-top: 40px;
-            }
-        }
-    }
-}
+//                             .aEmpresa {
+//                                 text-transform: uppercase;
+//                                 text-decoration: none;
+//                                 background-color: $acento;
+//                                 border-radius: 5px;
+//                                 padding: 10px 30px;
+//                                 display: inline-block;
+//                                 color: #000;
+//                                 margin-top: 250px;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .segundo{
+//                     height: 100vh;
+//                     min-height: 300px;
+
+//                     img{
+//                         height: 918px;
+//                         margin: auto;
+//                     }
+
+//                     .w-100-empresa {
+//                         @extend .carousel-item-empresa;
+//                         min-height: auto;
+//                     }
+
+//                     .carousel-caption-empresa {
+//                         p {
+//                             right: 50px;
+//                             .aEmpresa {
+//                                 margin-top: 400px;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .tercero{
+//                     img{
+//                         margin: 80px 0px 0px 420px;
+//                     }
+
+//                     .w-100-empresa {
+//                         @extend .carousel-item-empresa;
+//                         min-height: auto;
+//                     }
+
+//                     .carousel-caption-empresa {
+//                         h2{
+//                             text-wrap: wrap;
+//                         }
+//                         p {
+//                             margin-top: -10px;
+//                             right: 50px;
+//                             .aEmpresa {
+//                                 margin-top: 400px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 768px) {
+//     .empresa {
+//         width: 100vw;
+//         .historia {
+//             h1 {
+//                 left: 20px;
+//             }
+//         }
+
+//         .mainEmpresa {
+//             margin: -100px 0px -70px 0px;
+
+//             .carousel {
+//                 .carousel-inner {
+//                     .carousel-item-empresa {
+//                         height: 100vh;
+//                         min-height: 300px;
+
+//                         .w-100-empresa {
+//                             height: 100vh;
+//                             width: 100vw;
+//                         }
+
+//                         .carousel-caption-empresa {
+//                             position: fixed;
+//                             bottom: 350px;
+//                             width: 100%;
+
+//                             h2 {
+//                                 font-size: 17px;
+//                             }
+
+//                             p {
+//                                 position: fixed;
+//                                 left: 50px;
+//                                 font-size: 14px;
+//                                 width: 80%;
+//                                 .aEmpresa {
+//                                     position: fixed;
+//                                     padding: 10px 15px;
+//                                     font-size: 15px;
+//                                     right: 5px;
+//                                     bottom: -50px;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                     .segundo{
+//                         height: 100vh;
+//                         min-height: 300px;
+    
+//                         img{
+//                             height: 918px;
+//                             margin: auto;
+//                         }
+    
+//                         .w-100-empresa {
+//                             position: absolute;
+//                             left: -420px;
+//                             width: auto;
+//                         }
+    
+//                         .carousel-caption-empresa {
+//                             h2 {
+//                                 margin-top: 900px;
+//                             }
+//                             p {
+//                                 bottom: 100px;
+//                                 .aEmpresa {
+//                                     position: fixed;
+//                                     bottom: -50px;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                     .tercero{
+//                         img{
+//                             margin: 80px 0px 0px 420px;
+//                         }
+    
+//                         .w-100-empresa {
+//                             position: absolute;
+//                             left: -420px;
+//                             width: 100vw;
+//                             height: 90vh;
+//                         }
+    
+//                         .carousel-caption-empresa {
+//                             background-color: #00000075;
+//                             opacity: 1;
+//                             height: 345px;
+//                             width: 395px;
+//                             position: fixed;
+//                             bottom: 350px;
+//                             width: 100%;
+//                             h2 {
+//                                 margin-top: 890px;
+//                                 opacity: 1;
+//                             }
+//                             p {
+//                                 right: 0px;
+//                                 opacity: 1;
+//                                 .aEmpresa {
+//                                     margin-top: 365px;
+//                                     opacity: 1;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 350px) {
+//     main {
+//         .historia {
+//             h1 {
+//                 margin-top: 40px;
+//             }
+//         }
+//     }
+// }

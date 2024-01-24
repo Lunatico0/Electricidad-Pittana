@@ -1,4 +1,5 @@
 main{
+    margin: 60px 0px 0px 0px;
     .flexRow{
         display: flex;
         .infoImg{
@@ -6,7 +7,7 @@ main{
             view-timeline-name: --image;
             view-timeline-axis: block;
             animation-timeline: --image;
-            animation-name: zoomOut;
+            animation-name: zoomIn;
             animation-range: entry 25% cover 50%;
         }
         .infoDescripcion{
@@ -39,7 +40,7 @@ main{
         .flexRow{
             display: block;
             .infoImg{
-                @include infoImge(80vw, 1520px, 300px);
+                @include infoImge(90vw, 1520px, 300px);
             }
             .infoDescripcion{
                 font-size: 15px;
@@ -48,7 +49,8 @@ main{
         .flexReverse{
             display: block;
             .infoImg{
-                @include infoImge(80vw, 1520px, 300px);
+                @include infoImge(90vw, 1520px, 300px);
+                animation-name: zoomIn;
             }
             .infoImgLast{
                 margin-bottom: 0px;
