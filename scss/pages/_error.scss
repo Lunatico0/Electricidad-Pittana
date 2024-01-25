@@ -1,7 +1,7 @@
 .error{
     padding: 0;
     margin: 0;
-    div{
+    .notFound{
         width: 100vw;
         height: 40px;
         align-self: center;
@@ -12,10 +12,6 @@
         img{
             width: 50%;
             margin-top: 90px;
-            @media only screen and (max-width: 768px){
-                width: 90%;
-                margin-top: 190px;
-            }
         }
         h1{
             position: fixed;

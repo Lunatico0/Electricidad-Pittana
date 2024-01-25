@@ -31,9 +31,6 @@ header{
                                 color: $secundario;
                                 text-wrap: nowrap;
                             }
-                            @media only screen and (max-width: 770px) {
-                                position: static;
-                            }
                         }
                         .current{
                             background-color: $acento;

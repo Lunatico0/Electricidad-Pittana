@@ -12,22 +12,18 @@
             top: 60px;
             margin-left: 34%;
             margin-right: 34%;
-            @media only screen and (max-width: 768px){
-                margin: 0;
-                border-radius: 5px;
-            }
         }
     }
     .empresa{
         width: 100vw;
         height: 90vh;
         margin: 0;
-        div{
+        .carousel{
             .botones{
                 margin-left: -1500px;
             }
-            div{
-                div{
+            .carousel-inner{
+                .carousel-item{
                     width: 100%;
                     height: 100%;
                     .imgEmpresa{
@@ -35,65 +31,36 @@
                         height: 90vh;
                         margin: auto;
                         margin-top: 10px;
-                        @media only screen and (max-width: 768px){
-                            width: 150vw;
-                            height: 90vh;
-                            margin-left: -90px;
-                        }
                     }
                     .carouselCaption{
                         display: flex;
+                        flex-direction: column;
                         .titulo{
                             color: $cTexto;
                             position: fixed;
                             left: 50px;
-                            top: 150px;
+                            top: 240px;
                             animation-delay: .5s;
-                            @media only screen and (max-width: 768px){
-                                background-color: rgba(0, 0, 0, 0.616);
-                                top: 45%;
-                            }
                         }
                         .historiaUno{
                             display: block;
                             color: $cTexto;
-                            margin-top: 20%;
-                            margin-left: 55%;
+                            margin-top: -350px;
+                            margin-left: 80%;
                             width: 29vw;
                             animation-delay: 1s;
-                            @media only screen and (max-width: 768px){
-                                background-color: rgba(0, 0, 0, 0.616);
-                                margin-top: 110%;
-                                margin-left: 15%;
-                                height: 155px;
-                                width: 65vw;
-                            }
                         }
                         .historiaDos{
                             @extend .historiaUno;
                             width: 23vw;
-                            margin-top: 15%;
-                            margin-left: 60%;
-                            @media only screen and (max-width: 768px){
-                                background-color: rgba(0, 0, 0, 0.616);
-                                margin-top: 110%;
-                                margin-left: 15%;
-                                height: 32%;
-                                width: 65vw;
-                            }
+                            margin-top: -350px;
+                            margin-left: 86%;
                         }
                         .historiaTres{
                             @extend .historiaUno;
                             width: 21vw;
-                            margin-top: 10%;
-                            margin-left: 60%;
-                            @media only screen and (max-width: 768px){
-                                background-color: rgba(0, 0, 0, 0.616);
-                                margin-top: 110%;
-                                margin-left: 15%;
-                                height: 35%;
-                                width: 65vw;
-                            }
+                            margin-top: -350px;
+                            margin-left: 90%;
                         }
                         .saberMas{
                             animation-delay: 1.5s;

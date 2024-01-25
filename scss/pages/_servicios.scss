@@ -35,32 +35,3 @@ main{
         }
     }
 }
-@media only screen and (max-width: 770px) {
-    main{
-        .flexRow{
-            display: block;
-            .infoImg{
-                @include infoImge(90vw, 1520px, 300px);
-            }
-            .infoDescripcion{
-                font-size: 15px;
-            }
-        }
-        .flexReverse{
-            display: block;
-            .infoImg{
-                @include infoImge(90vw, 1520px, 300px);
-                animation-name: zoomIn;
-            }
-            .infoImgLast{
-                margin-bottom: 0px;
-            }
-            .lastDescripcion{
-                padding-bottom: 70px;
-            }
-            .infoDescripcion{
-                font-size: 15px;
-            }
-        }
-    }
-}

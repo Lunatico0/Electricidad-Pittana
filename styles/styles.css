@@ -55,22 +55,6 @@ li {
   list-style: none;
 }
 
-@media only screen and (max-width: 770px) {
-  a,
-  label,
-  p {
-    font-size: 14px;
-  }
-  a:hover {
-    padding: 5px 9px;
-  }
-  main {
-    margin: 60px 0px 80px 0px;
-  }
-  h1 {
-    font-size: 18px;
-  }
-}
 @keyframes fadeLeft {
   from {
     margin-left: 100%;
@@ -138,11 +122,6 @@ header .navBar div div ul li .aRight:hover {
   color: #1c1211;
   text-wrap: nowrap;
 }
-@media only screen and (max-width: 770px) {
-  header .navBar div div ul li .aRight {
-    position: static;
-  }
-}
 header .navBar div div ul li .current {
   background-color: #3dd1ff;
   color: #1c1211;
@@ -176,14 +155,6 @@ header .navBar div div ul li .current {
   padding: 0;
   transform: scale(1);
 }
-@media only screen and (max-width: 768px) {
-  .home .container-xxl .row .col-lg-4 .row .col-12 form button a {
-    padding: 6px 41px;
-  }
-  .home .container-xxl .row .col-lg-4 .row .col-12 form button a:hover {
-    padding: 0;
-  }
-}
 .home .container-xxl .row .logo {
   margin: auto;
   padding: 20px 0px;
@@ -200,21 +171,13 @@ header .navBar div div ul li .current {
   margin-left: 25%;
 }
 
-@media only screen and (max-width: 991px) {
-  .home {
-    padding-top: 40px;
-  }
-  .boton {
-    margin-bottom: 70px;
-  }
-}
 main {
   margin: 60px 0px 0px 0px;
 }
-main .flexRow {
+main .container-xxl .flexRow {
   display: flex;
 }
-main .flexRow .infoImg {
+main .container-xxl .flexRow .infoImg {
   width: 45vw;
   max-width: 650px;
   height: 450px;
@@ -224,20 +187,20 @@ main .flexRow .infoImg {
   animation-name: zoomIn;
   animation-range: entry 25% cover 50%;
 }
-main .flexRow .infoImgLast {
+main .container-xxl .flexRow .infoImgLast {
   margin-bottom: 50px;
 }
-main .flexRow .infoDescripcion {
+main .container-xxl .flexRow .infoDescripcion {
   font-size: 20px;
   color: #c9c9c9;
   margin: auto;
   text-align: center;
 }
-main .flexReverse {
+main .container-xxl .flexReverse {
   display: flex;
   flex-direction: row-reverse;
 }
-main .flexReverse .infoImg {
+main .container-xxl .flexReverse .infoImg {
   width: 45vw;
   max-width: 650px;
   height: 450px;
@@ -247,44 +210,13 @@ main .flexReverse .infoImg {
   animation-name: zoomIn;
   animation-range: entry 25% cover 50%;
 }
-main .flexReverse .infoDescripcion {
+main .container-xxl .flexReverse .infoDescripcion {
   font-size: 20px;
   color: #c9c9c9;
   margin: auto;
   text-align: center;
 }
 
-@media only screen and (max-width: 770px) {
-  main .flexRow {
-    display: block;
-  }
-  main .flexRow .infoImg {
-    width: 90vw;
-    max-width: 340px;
-    height: 280px;
-    animation-name: zoomIn;
-  }
-  main .flexRow .infoImgLast {
-    margin-bottom: 0px;
-  }
-  main .flexRow .lastDescripcion {
-    padding-bottom: 70px;
-  }
-  main .flexRow .infoDescripcion {
-    font-size: 15px;
-  }
-  main .flexReverse {
-    display: block;
-  }
-  main .flexReverse .infoImg {
-    width: 90vw;
-    max-width: 340px;
-    height: 280px;
-  }
-  main .flexReverse .infoDescripcion {
-    font-size: 15px;
-  }
-}
 main {
   margin: 60px 0px 0px 0px;
 }
@@ -327,37 +259,6 @@ main .flexReverse .infoDescripcion {
   color: #c9c9c9;
 }
 
-@media only screen and (max-width: 770px) {
-  main .flexRow {
-    display: block;
-  }
-  main .flexRow .infoImg {
-    width: 90vw;
-    max-width: 1520px;
-    height: 300px;
-  }
-  main .flexRow .infoDescripcion {
-    font-size: 15px;
-  }
-  main .flexReverse {
-    display: block;
-  }
-  main .flexReverse .infoImg {
-    width: 90vw;
-    max-width: 1520px;
-    height: 300px;
-    animation-name: zoomIn;
-  }
-  main .flexReverse .infoImgLast {
-    margin-bottom: 0px;
-  }
-  main .flexReverse .lastDescripcion {
-    padding-bottom: 70px;
-  }
-  main .flexReverse .infoDescripcion {
-    font-size: 15px;
-  }
-}
 .box {
   margin: 40px 0px 0px 0px;
   padding: 0;
@@ -373,105 +274,60 @@ main .flexReverse .infoDescripcion {
   margin-left: 34%;
   margin-right: 34%;
 }
-@media only screen and (max-width: 768px) {
-  .box div .tPrincipal {
-    margin: 0;
-    border-radius: 5px;
-  }
-}
 .box .empresa {
   width: 100vw;
   height: 90vh;
   margin: 0;
 }
-.box .empresa div .botones {
+.box .empresa .carousel .botones {
   margin-left: -1500px;
 }
-.box .empresa div div div {
+.box .empresa .carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 100%;
 }
-.box .empresa div div div .imgEmpresa {
+.box .empresa .carousel .carousel-inner .carousel-item .imgEmpresa {
   display: block;
   height: 90vh;
   margin: auto;
   margin-top: 10px;
 }
-@media only screen and (max-width: 768px) {
-  .box .empresa div div div .imgEmpresa {
-    width: 150vw;
-    height: 90vh;
-    margin-left: -90px;
-  }
-}
-.box .empresa div div div .carouselCaption {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption {
   display: flex;
+  flex-direction: column;
 }
-.box .empresa div div div .carouselCaption .titulo {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .titulo {
   color: #c9c9c9;
   position: fixed;
   left: 50px;
-  top: 150px;
+  top: 240px;
   animation-delay: 0.5s;
 }
-@media only screen and (max-width: 768px) {
-  .box .empresa div div div .carouselCaption .titulo {
-    background-color: rgba(0, 0, 0, 0.616);
-    top: 45%;
-  }
-}
-.box .empresa div div div .carouselCaption .historiaUno, .box .empresa div div div .carouselCaption .historiaTres, .box .empresa div div div .carouselCaption .historiaDos {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaUno, .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaTres, .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaDos {
   display: block;
   color: #c9c9c9;
-  margin-top: 20%;
-  margin-left: 55%;
+  margin-top: -350px;
+  margin-left: 80%;
   width: 29vw;
   animation-delay: 1s;
 }
-@media only screen and (max-width: 768px) {
-  .box .empresa div div div .carouselCaption .historiaUno, .box .empresa div div div .carouselCaption .historiaTres, .box .empresa div div div .carouselCaption .historiaDos {
-    background-color: rgba(0, 0, 0, 0.616);
-    margin-top: 110%;
-    margin-left: 15%;
-    height: 155px;
-    width: 65vw;
-  }
-}
-.box .empresa div div div .carouselCaption .historiaDos {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaDos {
   width: 23vw;
-  margin-top: 15%;
-  margin-left: 60%;
+  margin-top: -350px;
+  margin-left: 86%;
 }
-@media only screen and (max-width: 768px) {
-  .box .empresa div div div .carouselCaption .historiaDos {
-    background-color: rgba(0, 0, 0, 0.616);
-    margin-top: 110%;
-    margin-left: 15%;
-    height: 32%;
-    width: 65vw;
-  }
-}
-.box .empresa div div div .carouselCaption .historiaTres {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaTres {
   width: 21vw;
-  margin-top: 10%;
-  margin-left: 60%;
+  margin-top: -350px;
+  margin-left: 90%;
 }
-@media only screen and (max-width: 768px) {
-  .box .empresa div div div .carouselCaption .historiaTres {
-    background-color: rgba(0, 0, 0, 0.616);
-    margin-top: 110%;
-    margin-left: 15%;
-    height: 35%;
-    width: 65vw;
-  }
-}
-.box .empresa div div div .carouselCaption .saberMas {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .saberMas {
   animation-delay: 1.5s;
   position: fixed;
   bottom: 55px;
   right: 5vw;
 }
-.box .empresa div div div .carouselCaption .saberMas .aEmpresa {
+.box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .saberMas .aEmpresa {
   background-color: #3dd1ff;
   color: #000;
   border-radius: 5px;
@@ -495,20 +351,12 @@ main div .row div form div button a:hover {
   padding: 0;
   transform: scale(1);
 }
-@media only screen and (max-width: 768px) {
-  main div .row div form div button a {
-    padding: 6px 30px;
-  }
-  main div .row div form div button a:hover {
-    padding: 0;
-  }
-}
 
 .error {
   padding: 0;
   margin: 0;
 }
-.error div {
+.error .notFound {
   width: 100vw;
   height: 40px;
   align-self: center;
@@ -517,30 +365,24 @@ main div .row div form div button a:hover {
   align-items: center;
   justify-self: center;
 }
-.error div img {
+.error .notFound img {
   width: 50%;
   margin-top: 90px;
 }
-@media only screen and (max-width: 768px) {
-  .error div img {
-    width: 90%;
-    margin-top: 190px;
-  }
-}
-.error div h1 {
+.error .notFound h1 {
   position: fixed;
   top: 80px;
   width: 100vw;
   background-color: #67d2da;
   color: #1c1211;
 }
-.error div div button {
+.error .notFound div button {
   position: fixed;
   bottom: 55px;
   right: 5vw;
   border-radius: 5px;
 }
-.error div div button a {
+.error .notFound div button a {
   background-color: #3dd1ff;
   color: #000;
   border-radius: 5px;
@@ -551,21 +393,21 @@ main div .row div form div button a:hover {
   text-wrap: nowrap;
 }
 
-footer .estiloFooter {
+.estiloFooter {
   background-color: #1c1211;
   display: grid;
   width: 100vw;
   height: 50px;
 }
-footer .estiloFooter .contenedorFooter .listaFooter {
+.estiloFooter .contenedorFooter .listaFooter {
   display: flex;
   gap: 1rem;
 }
-footer .estiloFooter .contenedorFooter .listaFooter .top {
+.estiloFooter .contenedorFooter .listaFooter .top {
   position: absolute;
   right: 50px;
 }
-footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
+.estiloFooter .contenedorFooter .listaFooter .top:hover {
   text-decoration: underline;
   background-color: rgba(122, 110, 110, 0.4588235294);
   cursor: pointer;
@@ -575,6 +417,114 @@ footer .estiloFooter .contenedorFooter .listaFooter .top:hover {
 }
 
 @media only screen and (max-width: 770px) {
+  a,
+  label,
+  p {
+    font-size: 14px;
+  }
+  a:hover {
+    padding: 5px 9px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  main {
+    margin: 60px 0px 80px 0px;
+  }
+  main .container-xxl .flexRow {
+    display: block;
+  }
+  main .container-xxl .flexRow .infoImg {
+    width: 90vw;
+    max-width: 340px;
+    height: 280px;
+    animation-name: zoomIn;
+  }
+  main .container-xxl .flexRow .infoImgLast {
+    margin-bottom: 0px;
+  }
+  main .container-xxl .flexRow .lastDescripcion {
+    padding-bottom: 30px;
+  }
+  main .container-xxl .flexRow .infoDescripcion {
+    font-size: 15px;
+  }
+  main .container-xxl .flexReverse {
+    display: block;
+  }
+  main .container-xxl .flexReverse .infoImg {
+    width: 90vw;
+    max-width: 340px;
+    height: 280px;
+  }
+  main .container-xxl .flexReverse .infoImgLast {
+    margin-bottom: 0px;
+  }
+  main .container-xxl .flexReverse .lastDescripcion {
+    padding-bottom: 30px;
+  }
+  main .container-xxl .flexReverse .infoDescripcion {
+    font-size: 15px;
+  }
+  main .container-xxl .row .col-lg-6 form .col-12 button a {
+    padding: 6px 30px;
+  }
+  main .container-xxl .row .col-lg-6 form .col-12 button a:hover {
+    padding: 0;
+  }
+  header .navBar div div ul li .aRight {
+    position: static;
+  }
+  .home {
+    padding-top: 60px;
+  }
+  .home .container-xxl .row .col-lg-4 .row .col-12 form .boton {
+    margin-bottom: 30px;
+  }
+  .home .container-xxl .row .col-lg-4 .row .col-12 form .boton button a {
+    padding: 6px 41px;
+  }
+  .home .container-xxl .row .col-lg-4 .row .col-12 form .boton button a:hover {
+    padding: 0;
+  }
+  .box div .tPrincipal {
+    margin: 0;
+    border-radius: 5px;
+  }
+  .box .empresa .carousel .carousel-inner .carousel-item .imgEmpresa {
+    width: 150vw;
+    height: 90vh;
+    margin-left: -90px;
+  }
+  .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .titulo {
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 350px;
+  }
+  .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaUno, .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaDos, .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaTres {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: -250px;
+    margin-left: 15%;
+    height: 30%;
+    width: 65vw;
+  }
+  .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaDos {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: -310px;
+    margin-left: 17%;
+    height: 32%;
+    width: 65vw;
+  }
+  .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .historiaTres {
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: -315px;
+    margin-left: 15%;
+    height: 35%;
+    width: 65vw;
+  }
+  .error .notFound img {
+    width: 90%;
+    margin-top: 190px;
+  }
   footer .estiloFooter {
     height: 45px;
   }
