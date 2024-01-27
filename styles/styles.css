@@ -171,6 +171,10 @@ header .navBar div div ul li .current {
   margin-left: 25%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   margin: 60px 0px 0px 0px;
 }
