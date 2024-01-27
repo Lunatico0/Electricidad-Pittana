@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+* ::-webkit-scrollbar {
+  display: none;
+}
 
 @font-face {
   font-family: "ethnocentric";
@@ -169,10 +172,6 @@ header .navBar div div ul li .current {
   width: 50%;
   margin-top: -20%;
   margin-left: 25%;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 main {
@@ -440,9 +439,10 @@ main div .row div form div button a:hover {
   }
   main .container-xxl .flexRow .infoImg {
     width: 90vw;
-    max-width: 340px;
-    height: 280px;
+    max-width: 700px;
+    height: auto;
     animation-name: zoomIn;
+    width: 100%;
   }
   main .container-xxl .flexRow .infoImgLast {
     margin-bottom: 0px;
@@ -458,8 +458,9 @@ main div .row div form div button a:hover {
   }
   main .container-xxl .flexReverse .infoImg {
     width: 90vw;
-    max-width: 340px;
-    height: 280px;
+    max-width: 700px;
+    height: auto;
+    width: 100%;
   }
   main .container-xxl .flexReverse .infoImgLast {
     margin-bottom: 0px;

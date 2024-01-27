@@ -16,8 +16,9 @@
             .flexRow{
                 display: block;
                 .infoImg{
-                    @include infoImge(90vw, 340px, 280px);
+                    @include infoImge(90vw, 700px, auto);
                     animation-name: zoomIn;
+                    width: 100%;
                 }
                 .infoImgLast{
                     margin-bottom: 0px;
@@ -32,7 +33,8 @@
             .flexReverse{
                 display: block;
                 .infoImg{
-                    @include infoImge(90vw, 340px, 280px);
+                    @include infoImge(90vw, 700px, auto);
+                    width: 100%;
                 }
                 .infoImgLast{
                     margin-bottom: 0px;
