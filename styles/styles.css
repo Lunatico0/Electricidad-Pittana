@@ -332,7 +332,7 @@ main .flexReverse .infoDescripcion {
 }
 .box .empresa .carousel .carousel-inner .carousel-item .carouselCaption .saberMas .aEmpresa {
   background-color: #3dd1ff;
-  color: #000;
+  color: #1c1211;
   border-radius: 5px;
   padding: 10px 30px;
   display: inline-block;
@@ -387,7 +387,7 @@ main div .row div form div button a:hover {
 }
 .error .notFound div button a {
   background-color: #3dd1ff;
-  color: #000;
+  color: #1c1211;
   border-radius: 5px;
   padding: 10px 30px;
   display: inline-block;
