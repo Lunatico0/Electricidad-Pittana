@@ -67,6 +67,12 @@
     header{
         .navBar{
             div{
+                .tituloG {
+                    &:hover{
+                            padding: 5px 2px;
+                            transform: scale(1);
+                    }
+                }
                 div{
                     ul{
                         li{

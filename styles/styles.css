@@ -479,6 +479,10 @@ main div .row div form div button a:hover {
   main .container-xxl .row .col-lg-6 form .col-12 button a:hover {
     padding: 0;
   }
+  header .navBar div .tituloG:hover {
+    padding: 5px 2px;
+    transform: scale(1);
+  }
   header .navBar div div ul li .aRight {
     position: static;
   }
