@@ -1,13 +1,14 @@
-
     .estiloFooter {
         background-color: $secundario;
         display: grid;
+        justify-content: center;
         width: 100vw;
         height: 50px;
         .contenedorFooter{
             .listaFooter {
                 display: flex;
-                gap: 1rem;
+                padding-left: 0;
+                gap: 2rem;
                 .top {
                     position: absolute;
                     right: 50px;

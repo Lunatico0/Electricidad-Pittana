@@ -161,15 +161,13 @@
             }
         }
     }
-    footer{
-        .estiloFooter {
-            height: 45px;
-            .contenedorFooter{
-                .listaFooter {
-                    .top {
-                        position: absolute;
-                        right: 10px;
-                    }
+    .estiloFooter {
+        height: 45px;
+        .contenedorFooter{
+            .listaFooter {
+                gap: 35px;
+                .top {
+                    position: static;
                 }
             }
         }

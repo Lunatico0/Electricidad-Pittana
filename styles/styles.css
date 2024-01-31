@@ -399,12 +399,14 @@ main div .row div form div button a:hover {
 .estiloFooter {
   background-color: #1c1211;
   display: grid;
+  justify-content: center;
   width: 100vw;
   height: 50px;
 }
 .estiloFooter .contenedorFooter .listaFooter {
   display: flex;
-  gap: 1rem;
+  padding-left: 0;
+  gap: 2rem;
 }
 .estiloFooter .contenedorFooter .listaFooter .top {
   position: absolute;
@@ -530,12 +532,14 @@ main div .row div form div button a:hover {
     width: 90%;
     margin-top: 190px;
   }
-  footer .estiloFooter {
+  .estiloFooter {
     height: 45px;
   }
-  footer .estiloFooter .contenedorFooter .listaFooter .top {
-    position: absolute;
-    right: 10px;
+  .estiloFooter .contenedorFooter .listaFooter {
+    gap: 35px;
+  }
+  .estiloFooter .contenedorFooter .listaFooter .top {
+    position: static;
   }
 }
 
