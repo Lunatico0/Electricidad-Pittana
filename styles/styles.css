@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  width: 96vw;
+  width: 100%;
   margin: 60px 0px 0px 0px;
   padding-bottom: 60px;
 }
@@ -394,6 +394,19 @@ main div .row div form div button a:hover {
   text-transform: uppercase;
   text-decoration: none;
   text-wrap: nowrap;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: aqua;
+}
+.content .filtros {
+  position: static;
+}
+.content .contenido .contenedor .producto img {
+  aspect-ratio: 2/1.5;
+  width: 200px;
 }
 
 .estiloFooter {

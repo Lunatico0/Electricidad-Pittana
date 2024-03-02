@@ -1,0 +1,18 @@
+.content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: aqua;
+    .filtros{
+        position: static;
+    }
+    .contenido{
+        .contenedor{
+            .producto{
+                img{
+                    aspect-ratio: 2/1.5;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
