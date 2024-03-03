@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://electricidad-pittana.netlify.app/">
     <meta property="og:type" content="website">
@@ -19,6 +19,7 @@
     <meta name="twitter:image" content="https://electricidad-pittana.netlify.app/media/img/Logo.jpg">
 
     <title>Shop | Electricidad Pittana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -42,13 +43,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="liNav nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="liNav nav-link" aria-current="page"
+                                href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="liNav nav-link" href="./productos.html">Productos</a></li>
                         <li class="nav-item"><a class="liNav nav-link" href="./servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="liNav nav-link" href="./empresa.html">Empresa</a></li>
                         <li class="nav-item"><a class="liNav nav-link" href="./contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="liNav current nav-link" href="#">Shop</a></li>
-                        <li class="nav-item"><a class="liNav nav-link aRight" href="./error.html">Ingreso Clientes</a></li>
+                        <li class="nav-item"><a class="liNav nav-link aRight" href="./error.html">Ingreso Clientes</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,48 +65,131 @@
                 <h1 class="tituloFiltros"> "BreadCrumb"</h1>
             </header>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>
                         <button class="btnShop botonCategoria current">Todos los productos</button>
                     </li>
                     <li>
-                        <button class="btnShop botonCategoria">Categoria</button>
+                        <button class="btnShop botonCategoria">Categoria #1</button>
                     </li>
                     <li>
-                        <a class="btnShop botonCarrito" href="./carrito.html">Carrito <span class="contCarrito">0</span></a>
+                        <button class="btnShop botonCategoria">Categoria #2</button>
+                    </li>
+                    <li>
+                        <button class="btnShop botonCategoria">Categoria #3</button>
+                    </li>
+                    <li>
+                        <button class="btnShop botonCategoria">Categoria #4</button>
+                    </li>
+                    <li>
+                        <a class="btnShop botonCarrito" href="./carrito.html">
+                            <i class="bi bi-cart4"></i> Carrito<span class="contCarrito">12</span></a>
                     </li>
                 </ul>
             </nav>
+            <footer>
+                <h4>
+                    © 2024 - Derechos reservados Pittana Patricio.
+                </h4>
+            </footer>
         </aside>
 
         <section class="contenido">
             <h2 class="tituloPrincipal">Todos los productos</h2>
             <div class="contenedor">
-                <div class="producto">
+                <div class="item">
                     <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
-                    <div>
-                        <h3 class="productoTitulo"> Alternador </h3>
-                        <p class="productoPrecio"> $53760 </p>
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Alternador </h3>
+                        <p class="itemPrecio"> $53760 </p>
                         <button class="agregarProducto">agregar</button>
                     </div>
                 </div>
-            </div>
-            <div class="contenedor">
-                <div class="producto">
+                <div class="item">
                     <img src="../media/img/productos_arranque.png" alt="arranque">
-                    <div>
-                        <h3 class="productoTitulo"> Arranque </h3>
-                        <p class="productoPrecio"> $43850 </p>
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Arranque </h3>
+                        <p class="itemPrecio"> $43850 </p>
                         <button class="agregarProducto">agregar</button>
                     </div>
                 </div>
-            </div>
-            <div class="contenedor">
-                <div class="producto">
+                <div class="item">
                     <img src="../media/img/productos_bateria.webp" alt="bateria">
-                    <div>
-                        <h3 class="productoTitulo"> Bateria </h3>
-                        <p class="productoPrecio"> $76920 </p>
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Bateria </h3>
+                        <p class="itemPrecio"> $76920 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Alternador </h3>
+                        <p class="itemPrecio"> $53760 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_arranque.png" alt="arranque">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Arranque </h3>
+                        <p class="itemPrecio"> $43850 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_bateria.webp" alt="bateria">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Bateria </h3>
+                        <p class="itemPrecio"> $76920 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Alternador </h3>
+                        <p class="itemPrecio"> $53760 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_arranque.png" alt="arranque">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Arranque </h3>
+                        <p class="itemPrecio"> $43850 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_bateria.webp" alt="bateria">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Bateria </h3>
+                        <p class="itemPrecio"> $76920 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Alternador </h3>
+                        <p class="itemPrecio"> $53760 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_arranque.png" alt="arranque">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Arranque </h3>
+                        <p class="itemPrecio"> $43850 </p>
+                        <button class="agregarProducto">agregar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../media/img/productos_bateria.webp" alt="bateria">
+                    <div class="itemDetalles">
+                        <h3 class="itemTitulo"> Bateria </h3>
+                        <p class="itemPrecio"> $76920 </p>
                         <button class="agregarProducto">agregar</button>
                     </div>
                 </div>
@@ -145,4 +231,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

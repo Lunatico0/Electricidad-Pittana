@@ -19,6 +19,7 @@
     <meta name="twitter:image" content="https://electricidad-pittana.netlify.app/media/img/Logo.jpg">
 
     <title>Shop | Electricidad Pittana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -55,74 +56,101 @@
         </nav>
     </header>
 
-    <main>
+    <main class="content">
 
         <aside class="filtros">
             <header>
                 <h1 class="tituloFiltros"> Electricidad Pittana </h1>
             </header>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>
                         <a class="btnShop botonShop" href="./shop.html">Seguir Comprando</a>
                     </li>
                     <li>
-                        <a class="btnShop botonCarrito current" href="./carrito.html"><span class="contCarrito">0</span></a>
+                        <a class="btnShop botonCarrito current" href="./carrito.html">
+                            <i class="bi bi-cart4"></i> Carrito<span class="contCarrito disabled">12</span></a>
                     </li>
                 </ul>
             </nav>
+            <footer>
+                <h4>
+                    © 2024 - Derechos reservados Pittana Patricio.
+                </h4>
+            </footer>
         </aside>
 
         <section class="contenido">
             <h2 class="tituloPrincipal">Carrito de compras</h2>
             <div class="contenedorCarrito">
-                <p class="empty">Tu carrito esta vacio</p>
+                <p class="empty ">Tu carrito esta vacio <i class="bi bi-emoji-frown"></i></p>
                 
-                <div class="carritoProductos">
-                    <div class="producto">
+                <div class="carritoItem disabled">
+                    <div class="itemProducto">
                         <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
                         <div class="carritoProductoTitulo">
-                            <h3>Titulo</h3>
+                            <h5>Titulo</h5>
                             <h3>Alternador</h3>
                         </div>
                         <div class="carritoProductoCantidad">
-                            <h3>Cantidad</h3>
+                            <h5>Cantidad</h5>
                             <h3>1</h3>
                         </div>
                         <div class="carritoProductoPrecio">
-                            <h3>Precio</h3>
+                            <h5>Precio</h5>
                             <h3>$53760</h3>
                         </div>
                         <div class="carritoProductoSubtotal">
-                            <h3>Subtotal</h3>
+                            <h5>Subtotal</h5>
                             <h3>$53760</h3>
                         </div>
-                        <button class="eliminarArticulo"></button>
+                        <button class="eliminarArticulo"><i class="bi bi-trash3"></i></button>
                     </div>
 
-                    <div class="producto">
+                    <div class="itemProducto">
+                        <img src="../media/img/productos_alternador_2.jpg" alt="alternador">
+                        <div class="carritoProductoTitulo">
+                            <h5>Titulo</h5>
+                            <h3>Alternador</h3>
+                        </div>
+                        <div class="carritoProductoCantidad">
+                            <h5>Cantidad</h5>
+                            <h3>1</h3>
+                        </div>
+                        <div class="carritoProductoPrecio">
+                            <h5>Precio</h5>
+                            <h3>$53760</h3>
+                        </div>
+                        <div class="carritoProductoSubtotal">
+                            <h5>Subtotal</h5>
+                            <h3>$53760</h3>
+                        </div>
+                        <button class="eliminarArticulo"><i class="bi bi-trash3"></i></button>
+                    </div>
+
+                    <div class="itemProducto">
                         <img src="../media/img/productos_arranque.png" alt="arranque">
                         <div class="carritoProductoTitulo">
-                            <h3>Titulo</h3>
+                            <h5>Titulo</h5>
                             <h3>Arranque</h3>
                         </div>
                         <div class="carritoProductoCantidad">
-                            <h3>Cantidad</h3>
+                            <h5>Cantidad</h5>
                             <h3>1</h3>
                         </div>
                         <div class="carritoProductoPrecio">
-                            <h3>Precio</h3>
+                            <h5>Precio</h5>
                             <h3>$43850</h3>
                         </div>
                         <div class="carritoProductoSubtotal">
-                            <h3>Subtotal</h3>
+                            <h5>Subtotal</h5>
                             <h3>$43850</h3>
                         </div>
-                        <button class="eliminarArticulo"></button>
+                        <button class="eliminarArticulo"><i class="bi bi-trash3"></i></button>
                     </div>
                 </div>
 
-                <div class="carritoAcciones">
+                <div class="carritoAcciones disabled">
                     <div class="acciones1">
                         <button class="carritoAccionesVaciar">Vaciar Carrito</button>
                     </div>
@@ -134,6 +162,8 @@
                         <button class="carritoAccionesComprar">Comprar Ahora</button>
                     </div>
                 </div>
+
+                <p class="comprado disabled">Gracias por tu compra <i class="bi bi-emoji-laughing"></i></p>
             </div>
         </section>
 
