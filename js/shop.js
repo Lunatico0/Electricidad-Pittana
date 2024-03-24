@@ -90,21 +90,27 @@ let nuevoProducto = new producto(
 );
 productos.push(nuevoProducto);
 
+const productosLS = JSON.stringify(productos)
+
+localStorage.setItem("productos", productosLS);
 
 const contenedorProductos = document.querySelector("#productos");
 const categorias = document.querySelectorAll(".botonCategoria");
 const tituloPrincipal = document.querySelector("#tituloPrincipal");
 const numerito = document.querySelector("#contCarrito");
+const tituloFiltros = document.querySelector("#tituloFiltros");
+const carritoLS = localStorage.getItem("productosEnCarrito");
 let agregarCarrito = document.querySelectorAll(".agregarProducto");
-const carritoLS = JSON.parse(localStorage.getItem(productosEnCarrito));
 let carrito;
 
 if(carritoLS){
-    carrito = carritoLS;
+    carrito = JSON.parse(carritoLS);
+    actualizarNumerito();
 } else {
     carrito = [];
 }
 
+//muestra los productos segun la categoria
 function cargarProductos(select){
     contenedorProductos.innerHTML = "";
     select.forEach(producto => {
@@ -114,7 +120,7 @@ function cargarProductos(select){
             <img src="${producto.imagen}" alt="${producto.titulo}">
             <div class="itemDetalles">
                 <h3 class="itemTitulo"> ${producto.titulo} </h3>
-                <p class="itemPrecio"> $${producto.precio} </p>
+                <p class="itemPrecio"> $${producto.precio.toLocaleString('es-AR')} </p>
                 <button class="agregarProducto" id="${producto.id}">agregar</button>
             </div>
         `
@@ -134,10 +140,12 @@ categorias.forEach( boton => {
         if(e.currentTarget.id != "todos"){
             const findProductos = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerText = findProductos.categoria.nombre;
+            tituloFiltros.innerText = findProductos.categoria.nombre;
 
             const filtroProductos = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(filtroProductos);
         } else {
+            tituloFiltros.innerText = "Todos los Productos";
             tituloPrincipal.innerText = "Todos los Productos";
             cargarProductos(productos);
         }
