@@ -1,3 +1,4 @@
+// productos para inicializar el localStorage
 let productos = [
     {
         id: "polea",
@@ -70,38 +71,56 @@ let productos = [
         precio: 44765
     },
 ];
-// Constructor de objetos
-function producto(id, titulo, imagen, categoria, precio) {
-    this.id = id,
-    this.titulo = titulo,
-    this.imagen = imagen,
-    this.categoria = categoria,
-    this.precio = precio
-};
-let nuevoProducto = new producto(
-    "alternador-nuevo", 
-    "Alternador Nuevo", 
-    "../media/img/productos_alternador_2.jpg",
-    {
-        nombre: "Alternadores",
-        id: "alternadores"
-    },
-    467599
-);
-productos.push(nuevoProducto);
 
-const productosLS = JSON.stringify(productos)
+// Se actualiza el localStorage con los productos
+if(!localStorage.getItem("productos")){
+    localStorage.setItem("productos", JSON.stringify(productos));
+}
 
-localStorage.setItem("productos", productosLS);
+// Se comprueba si existen productos en el localStorage, de lo contrario se inicializa con un array vacío
+productos = JSON.parse(localStorage.getItem("productos")) || [];
 
+// Se seleccionan los elementos del DOM
 const contenedorProductos = document.querySelector("#productos");
-const categorias = document.querySelectorAll(".botonCategoria");
+const filtros = document.querySelector("#filtros");
 const tituloPrincipal = document.querySelector("#tituloPrincipal");
-const numerito = document.querySelector("#contCarrito");
 const tituloFiltros = document.querySelector("#tituloFiltros");
 const carritoLS = localStorage.getItem("productosEnCarrito");
+const productosBajadoLS = JSON.parse(localStorage.getItem("productos")) || [];
 let agregarCarrito = document.querySelectorAll(".agregarProducto");
 let carrito;
+let ids = [];
+let nombres = [];
+
+productos.forEach(producto => {
+    if (!ids.includes(producto.categoria.id)) {
+        ids.push(producto.categoria.id);
+    }
+    if (!nombres.includes(producto.categoria.nombre)) {
+        nombres.push(producto.categoria.nombre);
+    }
+    console.log(producto.titulo);
+});
+
+
+for(let i = 0; i < ids.length; i++){
+    const li = document.createElement("li");
+    li.innerHTML = `
+    <button aria-valuetext="${nombres[i]}" id="${ids[i]}" class="btnShop botonCategoria">${nombres[i]}</button>
+    `
+    filtros.appendChild(li);
+}
+
+const categorias = document.querySelectorAll(".botonCategoria");
+const liCarrito = document.createElement("li");
+liCarrito.innerHTML = `
+    <a class="btnShop botonCarrito" href="./carrito.html">
+        <i class="bi bi-cart4"></i> Carrito<span id="contCarrito" class="contCarrito">0</span>
+    </a>
+`;
+
+filtros.appendChild(liCarrito);
+const numerito = document.querySelector("#contCarrito");
 
 if(carritoLS){
     carrito = JSON.parse(carritoLS);
@@ -110,8 +129,10 @@ if(carritoLS){
     carrito = [];
 }
 
+
 //muestra los productos segun la categoria
 function cargarProductos(select){
+    productos = JSON.parse(localStorage.getItem("productos")) || [];
     contenedorProductos.innerHTML = "";
     select.forEach(producto => {
         const div = document.createElement("div");
@@ -139,11 +160,12 @@ categorias.forEach( boton => {
 
         if(e.currentTarget.id != "todos"){
             const findProductos = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-            tituloPrincipal.innerText = findProductos.categoria.nombre;
-            tituloFiltros.innerText = findProductos.categoria.nombre;
+            tituloPrincipal.innerText = boton.ariaValueText;
+            tituloFiltros.innerText = boton.ariaValueText;
 
             const filtroProductos = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(filtroProductos);
+            
         } else {
             tituloFiltros.innerText = "Todos los Productos";
             tituloPrincipal.innerText = "Todos los Productos";
@@ -179,3 +201,14 @@ function actualizarNumerito(){
     let nuevoNumerito = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 };
+
+function obtenerIds(){
+    const id = [];
+    // Iteramos sobre el array de objetos
+    productos.forEach(producto => {
+        if (!id.includes(producto.id)) {
+            id.push(producto.id);
+        }
+    });
+    return id;
+}

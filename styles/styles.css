@@ -397,6 +397,7 @@ main div .row div form div button a:hover {
 }
 
 .content {
+  margin-top: 55px;
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: #333;
@@ -445,7 +446,15 @@ main div .row div form div button a:hover {
   padding: 0.15rem 0.25rem;
   border-radius: 0.25rem;
 }
-.content .filtros footer h4 {
+.content .filtros footer ul li {
+  color: #c9c9c9;
+  background-color: #333;
+}
+.content .filtros footer ul li :hover {
+  color: #333;
+  background-color: #c9c9c9;
+}
+.content .filtros footer h3 {
   font-size: 0.85rem;
   color: rgba(122, 110, 110, 0.4588235294);
 }
@@ -556,6 +565,9 @@ main div .row div form div button a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+.content .contenido .contenedor p {
+  color: #212121;
+}
 .content .contenido .contenedor .item .itemDetalles {
   background-color: #333;
   color: #c9c9c9;
@@ -567,6 +579,9 @@ main div .row div form div button a:hover {
   display: flex;
   flex-direction: column;
   gap: 0;
+}
+.content .contenido .contenedor .item .itemDetalles .itemPrecio {
+  color: #c9c9c9;
 }
 .content .contenido .contenedor .item .itemDetalles .agregarProducto {
   border: 0;
