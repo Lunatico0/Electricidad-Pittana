@@ -97,14 +97,29 @@
                     padding: .5rem;
                     padding-right: 1.5rem;
                     border-radius: 1rem;
-                    .carritoProductoTitulo,
                     .carritoProductoCantidad,
                     .carritoProductoPrecio,
                     .carritoProductoSubtotal{
-                        width: 10rem;
+                        width: 0rem;
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
+                        text-align: center;
+
+                    }
+                    .carritoProductoTitulo{
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-inline: -15%;
+                        max-height: 7rem;
+                        h3{
+                            max-width: max-content;
+                            // overflow: hidden;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-height: 3rem;
+                        }
                     }
                     .eliminarArticulo{
                         border: 0;
@@ -112,14 +127,14 @@
                         color: red;
                         cursor: pointer;
                     }
-                    h5{
+                    h4{
                         font-size: .75rem;
                     }
                     img{
-                        max-width: 100%;
-                        width: max-content;
                         height: 8rem;
+                        width: 8rem;
                         border-radius: .75rem;
+                        object-fit: cover;
                     }
                 }
             }
@@ -173,7 +188,7 @@
                 color: $fondo-body;
             }
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 24%);
             gap: 1rem;
             .item {
                 .itemDetalles {
@@ -190,6 +205,14 @@
                     .itemPrecio{
                         color: $cTexto;
                     }
+                    .itemTitulo{
+                        font-size: 20px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-height: 3rem;
+                    }
+                    .eliminarProducto,
                     .agregarProducto {
                         border: 0;
                         background-color: $cTexto;
@@ -206,13 +229,46 @@
                     }
                 }
                 img {
-                    max-width: 100%;
-                    width: fit-content;
+                    width: 100%;
                     height: 15rem;
                     border-radius: .75rem;
+                    object-fit: cover;
                 }
             }
         }
+    }
+}
+
+//listadoShop
+.listado{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    .formAdd{
+        position: sticky;
+        margin-top: 2rem;
+        gap: 1rem;
+        .tituloPrincipalListado{
+            color: $cTexto
+        }
+        #formularioAgregarProducto{
+            > div {
+                display: grid;
+                grid-template-areas: "label input";
+                justify-content: space-between;
+            }
+            > div > label{
+                grid-area: label;
+                width: 100%;
+            }
+            > div > input{
+                grid-area: input;
+                width: 15vw;
+            }
+        }
+    }
+    .delete{
+        margin-top: 2rem;
     }
 }
 

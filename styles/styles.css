@@ -494,14 +494,27 @@ main div .row div form div button a:hover {
   padding-right: 1.5rem;
   border-radius: 1rem;
 }
-.content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoTitulo,
 .content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoCantidad,
 .content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoPrecio,
 .content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoSubtotal {
-  width: 10rem;
+  width: 0rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+}
+.content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoTitulo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: -15%;
+  max-height: 7rem;
+}
+.content .contenido .contenedorCarrito .carritoItem .itemProducto .carritoProductoTitulo h3 {
+  max-width: max-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3rem;
 }
 .content .contenido .contenedorCarrito .carritoItem .itemProducto .eliminarArticulo {
   border: 0;
@@ -509,14 +522,14 @@ main div .row div form div button a:hover {
   color: red;
   cursor: pointer;
 }
-.content .contenido .contenedorCarrito .carritoItem .itemProducto h5 {
+.content .contenido .contenedorCarrito .carritoItem .itemProducto h4 {
   font-size: 0.75rem;
 }
 .content .contenido .contenedorCarrito .carritoItem .itemProducto img {
-  max-width: 100%;
-  width: max-content;
   height: 8rem;
+  width: 8rem;
   border-radius: 0.75rem;
+  object-fit: cover;
 }
 .content .contenido .contenedorCarrito .carritoAcciones {
   display: flex;
@@ -562,7 +575,7 @@ main div .row div form div button a:hover {
 }
 .content .contenido .contenedor {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 24%);
   gap: 1rem;
 }
 .content .contenido .contenedor p {
@@ -583,6 +596,14 @@ main div .row div form div button a:hover {
 .content .contenido .contenedor .item .itemDetalles .itemPrecio {
   color: #c9c9c9;
 }
+.content .contenido .contenedor .item .itemDetalles .itemTitulo {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3rem;
+}
+.content .contenido .contenedor .item .itemDetalles .eliminarProducto,
 .content .contenido .contenedor .item .itemDetalles .agregarProducto {
   border: 0;
   background-color: #c9c9c9;
@@ -593,15 +614,46 @@ main div .row div form div button a:hover {
   border: solid 1px #c9c9c9;
   transition: background-color 0.2s, color 0.2s;
 }
+.content .contenido .contenedor .item .itemDetalles .eliminarProducto:hover,
 .content .contenido .contenedor .item .itemDetalles .agregarProducto:hover {
   background-color: #333;
   color: #c9c9c9;
 }
 .content .contenido .contenedor .item img {
-  max-width: 100%;
-  width: fit-content;
+  width: 100%;
   height: 15rem;
   border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.listado {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+.listado .formAdd {
+  position: sticky;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.listado .formAdd .tituloPrincipalListado {
+  color: #c9c9c9;
+}
+.listado .formAdd #formularioAgregarProducto > div {
+  display: grid;
+  grid-template-areas: "label input";
+  justify-content: space-between;
+}
+.listado .formAdd #formularioAgregarProducto > div > label {
+  grid-area: label;
+  width: 100%;
+}
+.listado .formAdd #formularioAgregarProducto > div > input {
+  grid-area: input;
+  width: 15vw;
+}
+.listado .delete {
+  margin-top: 2rem;
 }
 
 .disabled {

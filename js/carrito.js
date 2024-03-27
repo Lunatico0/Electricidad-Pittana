@@ -27,19 +27,19 @@ function cargarItems(){
             div.innerHTML = `
                 <img src="${producto.imagen}" alt="${producto.titulo}">
                 <div class="carritoProductoTitulo">
-                    <h5>Titulo</h5>
+                    <h4>Titulo</h4>
                     <h3>${producto.titulo}</h3>
                 </div>
                 <div class="carritoProductoCantidad">
-                    <h5>Cantidad</h5>
+                    <h4>Cantidad</h4>
                     <h3>${producto.cantidad}</h3>
                 </div>
                 <div class="carritoProductoPrecio">
-                    <h5>Precio</h5>
+                    <h4>Precio</h4>
                     <h3>$${producto.precio.toLocaleString('es-AR')}</h3>
                 </div>
                 <div class="carritoProductoSubtotal">
-                    <h5>Subtotal</h5>
+                    <h4>Subtotal</h4>
                     <h3>$${subtotal.toLocaleString('es-AR')}</h3>
                 </div>
                 <button class="eliminarArticulo" id="${producto.id}" ><i class="bi bi-trash3"></i></button>

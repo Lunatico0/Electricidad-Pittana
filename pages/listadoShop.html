@@ -40,45 +40,46 @@
             </div>
         </nav>
     </header>
-
-    <main class="content" id="main">
-        <h2 class="tituloPrincipal">Agregar Producto</h2>
-        <form id="formularioAgregarProducto">
-            <div>
-                <label for="titulo">Título:</label>
-                <input type="text" id="titulo" name="titulo" required>
-            </div>
-            <div>
-                <label for="imagen">URL de la imagen:</label>
-                <input type="url" id="imagen" name="imagen" required>
-            </div>
-            <div>
-                <label for="categoria">Categoría:</label>
-                <select id="categoria" name="categoria" required>
-                    <!-- Opciones de categorías se llenarán dinámicamente desde el script -->
-                </select>
-                <input type="text" id="nuevaCategoria" name="nuevaCategoria" placeholder="Nueva categoría" style="display: none;">
-            </div>
-            <div>
-                <label for="precio">Precio:</label>
-                <input type="number" id="precio" name="precio" required>
-            </div>
-            <button type="submit">Agregar Producto</button>
-        </form>
-
-        <div>
-            <label for="inputBusqueda">Nombre o Id del producto buscado:</label>
-            <input type="text" id="inputBusqueda" name="inputBusqueda" required>
+    <main class="content listado" id="main">
+        <div class="formAdd">
+            <h2 class="tituloPrincipalListado">Agregar Producto</h2>
+            <form id="formularioAgregarProducto">
+                <div>
+                    <label class="tituloListado" for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                <div>
+                    <label for="imagen">URL de la imagen:</label>
+                    <input type="url" id="imagen" name="imagen" required>
+                </div>
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" required>
+                        <!-- Opciones de categorías se llenarán dinámicamente desde el script -->
+                    </select>
+                    <input type="text" id="nuevaCategoria" name="nuevaCategoria" placeholder="Nueva categoría" style="display: none;">
+                </div>
+                <div>
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required>
+                </div>
+                <button class="agregarProducto" type="submit">Agregar Producto</button>
+            </form>
         </div>
-        <section class="contenido">
-            <h2 id="tituloPrincipal" class="tituloPrincipal">Producto a Eliminar</h2>
-            <div class="contenedor" id="contenedorProductos">
-                <!-- El js rellena esto -->
+
+        <div class="delete">
+            <div class="search">
+                <label for="inputBusqueda">Nombre o Id del producto buscado:</label>
+                <input type="text" id="inputBusqueda" name="inputBusqueda" required>
             </div>
-        </section>
+            <section class="contenido">
+                <h2 id="tituloPrincipal" class="tituloPrincipal">Producto a Eliminar</h2>
+                <div class="contenedor" id="contenedorProductos">
+                    <!-- El js rellena esto -->
+                </div>
+            </section>
+        </div>
     </main>
-
-
     <footer>
         <div class="estiloFooter navbar navbar-expand-md border-bottom border-body fixed-bottom d-flex justify-content-center"
             data-bs-theme="dark">
@@ -102,7 +103,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/listadoShop.js"></script>
 </body>
